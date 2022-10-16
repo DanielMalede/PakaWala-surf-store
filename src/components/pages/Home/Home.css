@@ -1,0 +1,12 @@
+@media screen and (min-width: 600px) {
+  .headPic {
+    width: 95vw;
+    height: 82vh;
+  }
+}
+/* @media screen and (max-width: 600px) {
+    .headPic {
+      width: 95vw;
+      height: 82vh;
+    }
+  } */
