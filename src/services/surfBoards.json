@@ -1,0 +1,44 @@
+[
+   
+    {
+      "id":1,
+      "surf": "5'10 SURFBOARD",
+      "price": 1500,
+      "size":5,
+      "img": "images/1.jpg",
+      "Availability": "In stock",
+      "infoShort": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline.",
+      "info": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline. It´s an evolution of the Baked Potato, with more rocker and less width. You can surf in small and weak waves like a shorboard.Grade B: Board with a slight yellow hue."
+    },
+    {
+      "id":2,  
+      "surf": "5'10 SURFBOARD",
+        "price": 1500,
+        "size":5,
+        "img": "images/2.jpg",
+        "Availability": "In stock",
+        "infoShort": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline.",
+        "info": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline. It´s an evolution of the Baked Potato, with more rocker and less width. You can surf in small and weak waves like a shorboard.Grade B: Board with a slight yellow hue."
+      },
+    {
+      "id":3,  
+      "surf": "5'10 SURFBOARD",
+        "price": 1500,
+        "size":5,
+        "img": "images/3.jpg",
+        "Availability": "In stock",
+        "infoShort": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline.",
+        "info": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline. It´s an evolution of the Baked Potato, with more rocker and less width. You can surf in small and weak waves like a shorboard.Grade B: Board with a slight yellow hue."
+      },
+    {
+      "id":4,  
+      "surf": "5'10 SURFBOARD",
+        "price": 1500,
+        "size":5,
+        "img": "images/4.jpg",
+        "Availability": "In stock",
+        "infoShort": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline.",
+        "info": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline. It´s an evolution of the Baked Potato, with more rocker and less width. You can surf in small and weak waves like a shorboard.Grade B: Board with a slight yellow hue."
+      }
+  
+    ]

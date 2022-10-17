@@ -9,9 +9,11 @@ import {
   SignUp,
   Footer,
   About,
-  Cart,
-  Account
+  Surfboards,
+  Account,
+  SideCart
 } from "./components/pages";
+import { SurfBoardsProvider } from "./context/SurfBoardContext";
 import {
   UserAuthContextProvider,
   useUserAuth,
@@ -21,6 +23,7 @@ function App() {
   let { user } = useUserAuth();
   return (
     <div className="App">
+        <SurfBoardsProvider>
       <UserAuthContextProvider>
         {!user ? "" : <Header />}
           <Routes>
@@ -30,11 +33,13 @@ function App() {
             <Route path="/" element={<ProtectedPage><Home /></ProtectedPage>}/>
             <Route path="*" element={<NotFound />} />
             <Route path="About" element={user!=null?<About />:<SignIn/>} />
-            <Route path="Cart" element={user!=null?<Cart />:<SignIn/>} />
+            <Route path="Surfboards" element={user!=null?<Surfboards />:<SignIn/>} />
             <Route path="Account" element={user!=null?<Account />:<SignIn/>} />
+            <Route path="SideCart" element={user!=null?<SideCart />:<SignIn/>} />
           </Routes>
         {!user?"":<Footer/>}
       </UserAuthContextProvider>
+        </SurfBoardsProvider>
     </div>
   );
 }

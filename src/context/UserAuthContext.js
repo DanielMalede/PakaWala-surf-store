@@ -12,6 +12,10 @@ import { auth } from "../components/fireBase/db";
 
 const userAuthContext = createContext();
 
+export const useUserAuth = () => {
+  return useContext(userAuthContext);
+};
+
 export const UserAuthContextProvider = ({ children }) => {
   const [user, setUser] = useState("");
   
@@ -51,7 +55,3 @@ export const UserAuthContextProvider = ({ children }) => {
   );
 };
 
-
-export const useUserAuth = () => {
-  return useContext(userAuthContext);
-};

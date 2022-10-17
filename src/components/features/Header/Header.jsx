@@ -15,12 +15,14 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { useUserAuth } from "../../../context/UserAuthContext";
 import { Link, Navigate } from "react-router-dom";
-import { MDBBadge, MDBIcon } from 'mdb-react-ui-kit';
+import { MDBIcon } from 'mdb-react-ui-kit';
+import { useShoppingContext } from "../../../context/SurfBoardContext";
 
 
-const pages = [ "Home","Cart", "About"];
+const pages = ["Home","Surfboards","About"];
 
 const ResponsiveAppBar = () => {
+  const {openCart ,cartQuantity} = useShoppingContext()
   const { user, logOut } = useUserAuth();
   const handleLogOut = async () => {
     try {
@@ -129,7 +131,7 @@ const ResponsiveAppBar = () => {
             <Link to="Home">LOGO</Link>
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box className="thisBox" sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Link to={page}>
                 <Button 
@@ -145,12 +147,14 @@ const ResponsiveAppBar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-          <Tooltip title="Open Shopping Cart">
-              <IconButton onClick={""} sx={{ p: 0 }}>
+          <Tooltip  title="Open Shopping Cart">
+              <IconButton  sx={{ p: 0 }}
+              onClick={openCart}>
                 <MDBIcon fas icon="shopping-cart" />
+                <div className=" rounded-circle d-flex justify-content-center align-content-center"></div>
+                {cartQuantity}
               </IconButton>
             </Tooltip>
-            
             <Tooltip title="Open Account Menu">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar style={{ marginLeft: "15px" }} src={user.photoURL && user.photoURL} />

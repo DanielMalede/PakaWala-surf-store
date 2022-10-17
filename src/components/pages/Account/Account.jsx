@@ -68,7 +68,7 @@ export default function Account() {
                     </MDBCol>
                     <MDBCol>
                       <MDBTypography tag="h4" style={{ color: "#495057" }}>
-                        {user.email}
+                        {user.email == null ? "Not Available" : user.email}
                       </MDBTypography>
                     </MDBCol>
                   </MDBRow>
@@ -94,9 +94,7 @@ export default function Account() {
                     </MDBCol>
                     <MDBCol>
                       <MDBTypography tag="h4" style={{ color: "#495057" }}>
-                        {user.metadata.lastSignInTime == undefined || null
-                          ? "Not Available"
-                          : user.metadata.lastSignInTime}
+                        {/* {user.metadata.lastSignInTime === undefined || null? "Not Available": user.metadata.lastSignInTime}    */}
                       </MDBTypography>
                     </MDBCol>
                   </MDBRow>
@@ -116,3 +114,4 @@ export default function Account() {
     </>
   );
 }
+

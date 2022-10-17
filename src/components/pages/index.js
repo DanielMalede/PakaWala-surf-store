@@ -6,8 +6,9 @@ import SignIn from "./SignIn/SignIn";
 import NotFound from "./NotFound/NotFound";
 import ProtectedPage from './ProtectedPage/ProtectedPage'
 import About from './About/About'
-import Cart from "./Cart/Cart";
+import Surfboards from "./Surfboards/Surfboards";
 import ImageGallery from "../features/ImageGallery/ImageGallery";
 import CarouselBootStrap from "../features/CarouselBootStrap/CarouselBootStrap";
 import Account from "./Account/Account";
-export { Footer, Header, Home, SignIn , SignUp, NotFound ,ProtectedPage,Cart,About,ImageGallery,CarouselBootStrap,Account};
+import SideCart from "./SideCart/SideCart";
+export { Footer, Header, Home, SignIn , SignUp, NotFound ,ProtectedPage,Surfboards,About,ImageGallery,CarouselBootStrap,Account,SideCart};
