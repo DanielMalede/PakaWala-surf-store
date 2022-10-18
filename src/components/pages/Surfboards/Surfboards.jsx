@@ -16,6 +16,7 @@ function Surfboards() {
             <Card {...item}/>
             </MDBCol>
             ))}
+            
             </MDBRow>
           </MDBContainer>
     </div>

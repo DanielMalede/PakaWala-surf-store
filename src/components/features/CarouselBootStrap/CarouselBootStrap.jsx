@@ -1,30 +1,30 @@
+import './Carousel.css'
 import React from "react";
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 
 export default function Carousel() {
   return (
-    <div>
-      <MDBCarousel showControls fade dealy={12000}>
-        <MDBCarouselItem
-          className="carouselcss d-block"
-          itemId={1}
-          src="images/Home/pic2.webp"
-          alt="..."
-          
-        />
-        <MDBCarouselItem
-          className="carouselcss d-block"
-          itemId={2}
-          src="images/Home/pic6.jpg"
-          alt="..."
-        />
-        <MDBCarouselItem
-          className="carouselcss d-block"
-          itemId={3}
-          src="images/Home/pic9.jpg"
-          alt="..."
-        />
-      </MDBCarousel>
+    <div className='CarouselPic'>
+    <MDBCarousel showControls fade>
+      <MDBCarouselItem
+        className='CarouselPic'
+        itemId={1}
+        src='images/Home/pic22.jpg'
+        alt='...'
+      />
+      <MDBCarouselItem
+        className='CarouselPic'
+        itemId={2}
+        src='images/Home/pic11.avif'
+        alt='...'
+      />
+      <MDBCarouselItem
+        className='CarouselPic'
+        itemId={3}
+        src='images/Home/pic15.avif'
+        alt='...'
+      />
+    </MDBCarousel>
     </div>
   );
 }

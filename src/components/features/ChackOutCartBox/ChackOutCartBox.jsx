@@ -66,7 +66,7 @@ export default function ChackOutCartBox({ id, quantity }) {
           </MDBBtn>
 
           <MDBInput
-            defaultValue={quantity}
+            value={quantity}
             min={0}
             type="number"
             label="Quantity"

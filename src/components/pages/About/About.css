@@ -1,0 +1,37 @@
+@media screen and (min-width: 600px) {
+  .aboutText {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutPic {
+    height: 93vh;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .aboutText {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutPic {
+    height: 93vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  .aboutText {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutPic {
+    height: 94vh;
+  }
+}
+.aboutBTN {
+  height: 6vh;
+}

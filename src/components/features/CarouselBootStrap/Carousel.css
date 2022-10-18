@@ -1,3 +1,17 @@
-.carouselcss{
-    height: 70vh;
-}
+@media screen and (min-width: 600px) {
+    .CarouselPic {
+      height: 93vh;
+      width: 99vw;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .CarouselPic {
+      height: 93vh;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .CarouselPic {
+      height: 94vh;
+    }
+  }
+  

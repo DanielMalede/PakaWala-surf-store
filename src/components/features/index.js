@@ -5,4 +5,5 @@ import ChackOutVisaBox from "./ChackOutVisaBox/ChackOutVisaBox";
 import ChackOutShippingBox from "./ChackOutShippingBox/ChackOutShippingBox";
 import ChackOutSummaryBox from "./ChackOutSummaryBox/ChackOutSummaryBox";
 import ChackOutCartBox from "./ChackOutCartBox/ChackOutCartBox";
-export{Card,CartItem,CarouselPopUp,ChackOutVisaBox,ChackOutShippingBox,ChackOutSummaryBox,ChackOutCartBox}
+import SurfBoardCard from "./SurfBoardCard/SurfBoardCard";
+export{Card,CartItem,CarouselPopUp,ChackOutVisaBox,ChackOutShippingBox,ChackOutSummaryBox,ChackOutCartBox,SurfBoardCard}

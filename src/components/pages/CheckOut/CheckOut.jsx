@@ -28,7 +28,6 @@ import { ChackOutCartBox } from "../../features";
 function CheckOut() {
   const { closeCart, surfItem } = useShoppingContext();
   const [checkout, setChackout] = useState(false);
-
   return (
     <div>
       <section className="h-100 gradient-custom">
@@ -154,20 +153,9 @@ function CheckOut() {
                       </span>
                     </MDBListGroupItem>
                   </MDBListGroup>
-
-                  {checkout ? (
+                  { surfItem.length != 0? (
                     <PayPal />
-                  ) : (
-                    <MDBBtn
-                      block
-                      size="lg"
-                      onClick={() => {
-                        setChackout(true);
-                      }}
-                    >
-                      Go to checkout
-                    </MDBBtn>
-                  )}
+                  ) : (<MDBBtn block size="lg" disabled>Checkout</MDBBtn>)}
                 </MDBCardBody>
               </MDBCard>
             </MDBCol>
