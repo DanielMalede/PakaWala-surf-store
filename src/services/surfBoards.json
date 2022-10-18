@@ -1,44 +1,326 @@
 [
-   
-    {
-      "id":1,
-      "surf": "5'10 SURFBOARD",
-      "price": 1500,
-      "size":5,
-      "img": "images/1.jpg",
-      "Availability": "In stock",
-      "infoShort": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline.",
-      "info": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline. It´s an evolution of the Baked Potato, with more rocker and less width. You can surf in small and weak waves like a shorboard.Grade B: Board with a slight yellow hue."
-    },
-    {
-      "id":2,  
-      "surf": "5'10 SURFBOARD",
-        "price": 1500,
-        "size":5,
-        "img": "images/2.jpg",
-        "Availability": "In stock",
-        "infoShort": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline.",
-        "info": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline. It´s an evolution of the Baked Potato, with more rocker and less width. You can surf in small and weak waves like a shorboard.Grade B: Board with a slight yellow hue."
-      },
-    {
-      "id":3,  
-      "surf": "5'10 SURFBOARD",
-        "price": 1500,
-        "size":5,
-        "img": "images/3.jpg",
-        "Availability": "In stock",
-        "infoShort": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline.",
-        "info": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline. It´s an evolution of the Baked Potato, with more rocker and less width. You can surf in small and weak waves like a shorboard.Grade B: Board with a slight yellow hue."
-      },
-    {
-      "id":4,  
-      "surf": "5'10 SURFBOARD",
-        "price": 1500,
-        "size":5,
-        "img": "images/4.jpg",
-        "Availability": "In stock",
-        "infoShort": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline.",
-        "info": "The Firewire Chumlee is an hybrid surfboard short and wide with a compact outline. It´s an evolution of the Baked Potato, with more rocker and less width. You can surf in small and weak waves like a shorboard.Grade B: Board with a slight yellow hue."
-      }
-  
-    ]
+  {
+    "id":1,
+    "counter":2,
+    "name": "Harley Ingleby Mid 6 Thunderbolt Red 7'6",
+    "price": 1025,
+    "Length":6,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Round Pin",
+    "color":"white",
+    "img":"",
+    "info":"The Mid 6 is designed to bring maximum mid-length performance to all types of waves."
+  },
+  {
+    "id":3,
+    "counter":4,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":5,
+    "counter":6,
+    "name": "Maurice Cole Revergfvdthtrse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":7,
+    "counter":8,
+    "name": "Maurfgthyuiuytrice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":9,
+    "counter":10,
+    "name": "Mauricrgebree Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":11,
+    "counter":12,
+    "name": "Maurgetbetbeice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":13,
+    "counter":14,
+    "name": "Maurvrebeice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":15,
+    "counter":16,
+    "name": "Maurrrice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":17,
+    "counter":18,
+    "name": "Maurivbrebebrece Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":19,
+    "counter":20,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":21,
+    "counter":22,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":23,
+    "counter":24,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":25,
+    "counter":26,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":27,
+    "counter":28,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":29,
+    "counter":30,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":31,
+    "counter":32,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":33,
+    "counter":34,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":35,
+    "counter":36,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":37,
+    "counter":38,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":39,
+    "counter":40,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":41,
+    "counter":42,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":43,
+    "counter":44,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":45,
+    "counter":46,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":47,
+    "counter":48,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+  {
+    "id":49,
+    "counter":50,
+    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
+    "price": 945.00,
+    "Length":6.4,
+    "Width": "images/SurfBoards/1.webp",
+    "Tail": "Squash",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+]
+    

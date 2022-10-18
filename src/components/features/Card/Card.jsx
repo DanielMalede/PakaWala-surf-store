@@ -1,68 +1,79 @@
 import "./Card.css";
-import React from "react";
+import React, { useState } from "react";
 import {
   MDBCard,
   MDBCardImage,
   MDBCardBody,
   MDBCardTitle,
   MDBCardText,
-  MDBCardLink,
   MDBListGroup,
   MDBListGroupItem,
   MDBContainer,
   MDBRow,
-  MDBBtn ,
-  MDBCol 
+  MDBBtn, 
+  MDBCol,
 } from "mdb-react-ui-kit";
 import formatCurrency from "../../../utilities/formatCurrency";
 import { useShoppingContext } from "../../../context/SurfBoardContext";
 import { Button } from "react-bootstrap";
+import surfBoards from "../../../services/surfBoards.json";
+import { PopUpCart } from "../../pages/index";
 
 
-
-function Card({id,surf,price,size,img,Availability,infoShort,}) {
+function Card({id,name,price,Length,Width,Tail,color,img,info,counter}) {
   const {getItemQantity,increaseCartQuantity,decreaseCartQuantity,removeFromCart} = useShoppingContext()
   const quantity = getItemQantity(id)
+  const [open, setOpen] = useState('');
+  const unhover = () => {
+    setOpen(false)
+  }
   return (
     
     <MDBContainer className="mt-5">
       <MDBRow>
-        <MDBCard>
-          <MDBCardImage
+        <MDBCard >
+          <MDBCardImage onMouseOver={()=> setOpen(true)} onMouseOut={unhover}
+          className=""
             position="top"
             alt="..."
-            src={img}
+            src={open ?`images/SurfBoards/${counter}.webp`:`images/SurfBoards/${id}.webp`}
             style={{objectFit: "cover"}}
           />
           <MDBCardBody>
-            <MDBCardTitle>{surf}</MDBCardTitle>
+            <MDBCardTitle>{name}</MDBCardTitle>
             <MDBCardText>
-             {infoShort}
+             {color}
             </MDBCardText>
           </MDBCardBody>
           <MDBListGroup className=" text-start" flush>
-            <MDBListGroupItem>Availability: {Availability}</MDBListGroupItem>
-            <MDBListGroupItem>Size: {size}</MDBListGroupItem>
+            <MDBListGroupItem>Availability: {Length}</MDBListGroupItem>
+            <MDBListGroupItem>Size: {Length}</MDBListGroupItem>
             <MDBListGroupItem>Price: {formatCurrency(price)}</MDBListGroupItem>
           </MDBListGroup>
-          <div >
-          {quantity===0?(<MDBBtn onClick={()=> increaseCartQuantity(id)} rounded >+ Add To Cart</MDBBtn>)
+          <MDBRow>
+            <MDBCol size={12}>
+
+
+
+          <div >{quantity===0?(<MDBBtn onClick={()=> increaseCartQuantity(id)} rounded >+ Add To Cart</MDBBtn>)
           
           :
           (<div className="mt-3 mb-3">
+
           <div className=" d-flex justify-content-center " style={{gap:".5rem"}}>
-          <Button onClick={()=> increaseCartQuantity(id)} rounded className="bg-success">+</Button>
+          <MDBBtn onClick={()=> increaseCartQuantity(id)} rounded className="bg-success">+</MDBBtn>
           <div><span className="fs-4">{quantity}</span> in Cart</div>
-          <Button onClick={()=> decreaseCartQuantity(id)} rounded className="bg-danger">-</Button>
+          <MDBBtn onClick={()=> decreaseCartQuantity(id)} rounded className="bg-danger">-</MDBBtn>
           </div>
           
           <div onClick={()=> removeFromCart(id)} className=" d-flex align-content-center justify-content-center" style={{gap:".5rem"}}><MDBBtn size="md" rounded className="bg-danger">Remove</MDBBtn></div>
+          
           </div>)}
+            <PopUpCart id={id} name={name} price={price} Length={Length}Width={Width} Tail={Tail}color={color} img={img} info={info} counter={counter}  />
           
           </div>
-          {/* <MDBCardBody className="p-0 m-0">
-            <MDBCardLink href="#">Card link</MDBCardLink>
-          </MDBCardBody> */}
+          </MDBCol>
+          </MDBRow>
         </MDBCard>
       </MDBRow>
     </MDBContainer>

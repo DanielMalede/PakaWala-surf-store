@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import { SideCart } from "../components/pages";
+import {CheckOut, SideCart } from "../components/pages";
 import useLocalStorage from "../hooks/useLocalStorage";
 
 const SurfBoardsContext = createContext({});
@@ -74,6 +74,7 @@ export function SurfBoardsProvider({ children }) {
     >
       {children}
       <SideCart isOpen={isOpen}/>
+      {/* <CheckOut/> */}
     </SurfBoardsContext.Provider>
   );
 }

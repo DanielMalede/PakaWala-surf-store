@@ -1,8 +1,11 @@
-import { Offcanvas, Stack } from "react-bootstrap";
+import { Button, Offcanvas, Stack } from "react-bootstrap";
 import { useShoppingContext } from "../../../context/SurfBoardContext";
 import CartItem from '../../features/CartItem/CartItem'
 import formatCurrency from "../../../utilities/formatCurrency";
 import surfBoards from "../../../services/surfBoards.json";
+import PayPal from "../../../payPal/PayPal/PayPal";
+import {ChackOut} from "../index";
+import { Link } from "react-router-dom";
 
 function SideCart({isOpen}) {
   const {closeCart,surfItem} = useShoppingContext()
@@ -15,7 +18,8 @@ function SideCart({isOpen}) {
         <Offcanvas.Body>
           <Stack gap={3}>
             {surfItem.map(items=>
-              <CartItem key={items.id} {...items}/>)}
+              <CartItem key={items.id} {...items}/>)
+              }
               <div className="ms-autov fw-bold fs-4">
                 Tatal 
                 {" "}
@@ -26,6 +30,11 @@ function SideCart({isOpen}) {
                   return total + (item?.price || 0) * surfItem.quantity
                 },0))}
               </div>
+                <Link to={"CheckOut"}>
+                <Button>
+                  Click To pay
+                </Button>
+                </Link>
           </Stack>
         </Offcanvas.Body>
       </Offcanvas>

@@ -6,6 +6,9 @@ import surfBoards from "../../../services/surfBoards.json";
 function Surfboards() {
   return (
     <div className="cart">
+      <div>
+      <img style={{width:"100vw",height:"40vh"}} src='images/Home/headPic.jpg' className=' shadow-6' alt='...' />
+      </div>
       <MDBContainer>
         <MDBRow>
       {surfBoards.map(item=> (

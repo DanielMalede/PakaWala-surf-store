@@ -11,4 +11,6 @@ import ImageGallery from "../features/ImageGallery/ImageGallery";
 import CarouselBootStrap from "../features/CarouselBootStrap/CarouselBootStrap";
 import Account from "./Account/Account";
 import SideCart from "./SideCart/SideCart";
-export { Footer, Header, Home, SignIn , SignUp, NotFound ,ProtectedPage,Surfboards,About,ImageGallery,CarouselBootStrap,Account,SideCart};
+import PopUpCart from "./PopUpCart/PopUpCart";
+import CheckOut from '../pages/CheckOut/CheckOut'
+export { Footer, Header, Home, SignIn , SignUp, NotFound ,ProtectedPage,Surfboards,About,ImageGallery,CarouselBootStrap,Account,SideCart,PopUpCart,CheckOut};

@@ -1,9 +1,12 @@
+import { useState } from "react";
+import { Button } from "react-bootstrap";
 import {Route, Routes } from "react-router-dom";
 import "./App.css";
 import {
   Header,
   Home,
   NotFound,
+  CheckOut,
   ProtectedPage,
   SignIn,
   SignUp,
@@ -11,7 +14,7 @@ import {
   About,
   Surfboards,
   Account,
-  SideCart
+  SideCart,
 } from "./components/pages";
 import { SurfBoardsProvider } from "./context/SurfBoardContext";
 import {
@@ -20,6 +23,7 @@ import {
 } from "./context/UserAuthContext";
 
 function App() {
+  const [checkOut,setChackOut] = useState(false)
   let { user } = useUserAuth();
   return (
     <div className="App">
@@ -36,6 +40,7 @@ function App() {
             <Route path="Surfboards" element={user!=null?<Surfboards />:<SignIn/>} />
             <Route path="Account" element={user!=null?<Account />:<SignIn/>} />
             <Route path="SideCart" element={user!=null?<SideCart />:<SignIn/>} />
+            <Route path="CheckOut" element={user!=null?<CheckOut />:<SignIn/>} />
           </Routes>
         {!user?"":<Footer/>}
       </UserAuthContextProvider>
