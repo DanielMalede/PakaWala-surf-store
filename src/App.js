@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { Button } from "react-bootstrap";
 import {Route, Routes } from "react-router-dom";
 import "./App.css";
 import {
@@ -10,7 +8,6 @@ import {
   ProtectedPage,
   SignIn,
   SignUp,
-  Footer,
   About,
   Surfboards,
   Account,
@@ -23,7 +20,6 @@ import {
 } from "./context/UserAuthContext";
 
 function App() {
-  const [checkOut,setChackOut] = useState(false)
   let { user } = useUserAuth();
   return (
     <div className="App">
@@ -42,7 +38,7 @@ function App() {
             <Route path="SideCart" element={user!=null?<SideCart />:<SignIn/>} />
             <Route path="CheckOut" element={user!=null?<CheckOut />:<SignIn/>} />
           </Routes>
-        {!user?"":<Footer/>}
+        {/* {!user?"":<Footer/>} */}
       </UserAuthContextProvider>
         </SurfBoardsProvider>
     </div>

@@ -7,6 +7,7 @@ import reportWebVitals from "./reportWebVitals";
 import { UserAuthContextProvider } from "./context/UserAuthContext";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 import { SurfBoardsProvider } from "./context/SurfBoardContext";
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

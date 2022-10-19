@@ -54,7 +54,7 @@ const ResponsiveAppBar = () => {
     <AppBar className=" bg-light"  position="static">
       <Container className="bg-light"  maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -71,7 +71,7 @@ const ResponsiveAppBar = () => {
             }}
           >
             <Link to="Home">LOGO</Link>
-          </Typography>
+          </Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -111,7 +111,7 @@ const ResponsiveAppBar = () => {
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-
+{/* 
           <Typography
             variant="h5"
             noWrap
@@ -129,11 +129,11 @@ const ResponsiveAppBar = () => {
             }}
           >
             <Link to="Home">LOGO</Link>
-          </Typography>
+          </Typography> */}
 
           <Box className="thisBox" sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <Link to={page}>
+              <Link key={page} to={page}>
                 <Button 
                 className=" text-black"
                   key={page}

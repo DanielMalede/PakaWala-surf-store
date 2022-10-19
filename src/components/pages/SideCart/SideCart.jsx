@@ -3,8 +3,6 @@ import { useShoppingContext } from "../../../context/SurfBoardContext";
 import CartItem from '../../features/CartItem/CartItem'
 import formatCurrency from "../../../utilities/formatCurrency";
 import surfBoards from "../../../services/surfBoards.json";
-import PayPal from "../../../payPal/PayPal/PayPal";
-import {ChackOut} from "../index";
 import { Link } from "react-router-dom";
 
 function SideCart({isOpen}) {
@@ -20,7 +18,7 @@ function SideCart({isOpen}) {
             {surfItem.map(items=>
               <CartItem key={items.id} {...items}/>)
               }
-              <div className="ms-autov fw-bold fs-4">
+              <div className="ms-auto fw-bold fs-4">
                 Tatal 
                 {" "}
                 {formatCurrency(

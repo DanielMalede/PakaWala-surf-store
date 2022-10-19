@@ -2,26 +2,29 @@
   {
     "id":1,
     "counter":2,
-    "name": "Harley Ingleby Mid 6 Thunderbolt Red 7'6",
-    "price": 1025,
-    "Length":6,
-    "Width": "images/SurfBoards/1.webp",
+    "name": "USED Maurice Cole Reverse Vee Twin Pin 6'7",
+    "Width": "22",
+    "price": 595.00,
+    "Length":6.7,
     "Tail": "Round Pin",
     "color":"white",
     "img":"",
-    "info":"The Mid 6 is designed to bring maximum mid-length performance to all types of waves."
+    "info":"The Mid 6 is designed to bring maximum mid-length performance to all types of waves.",
+    "category": "surf"
   },
   {
     "id":3,
     "counter":4,
-    "name": "Maurice Cole Reverse Vee Hybrid PU/Poly 6'4",
-    "price": 945.00,
-    "Length":6.4,
-    "Width": "images/SurfBoards/1.webp",
-    "Tail": "Squash",
+    "name": "Dan Mann Sweet Potato Firewire HE 5'6",
+    "price": 950.00,
+    "Length":6,
+    "Width": "22",
+    "Tail": "Swallow",
     "color":"green",
     "img":"",
-    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for.",
+    "category": "men"
+
   }
   ,
   {
@@ -34,7 +37,8 @@
     "Tail": "Squash",
     "color":"green",
     "img":"",
-    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for.",
+    "category": "Woman"
   }
   ,
   {
