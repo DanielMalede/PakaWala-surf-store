@@ -19,7 +19,7 @@ import { MDBIcon } from 'mdb-react-ui-kit';
 import { useShoppingContext } from "../../../context/SurfBoardContext";
 
 
-const pages = ["Home","Surfboards","About"];
+const pages = ["Home","Store","About"];
 
 const ResponsiveAppBar = () => {
   const {openCart ,cartQuantity} = useShoppingContext()

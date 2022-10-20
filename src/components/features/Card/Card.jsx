@@ -27,6 +27,7 @@ function Card({
   color,
   img,
   info,
+  img1,
   counter,
 }) {
   const {
@@ -41,7 +42,7 @@ function Card({
     setOpen(false);
   };
   return (
-    <MDBContainer className="mt-5">
+    <MDBContainer className="mt-5 mb-5">
       <MDBRow>
         <MDBCard>
           
@@ -53,9 +54,10 @@ function Card({
             alt="..."
             src={
               open
-                ? `images/SurfBoards/${counter}.webp`
-                : `images/SurfBoards/${id}.webp`
+                ? img1
+                : img
             }
+            
             style={{ objectFit: "cover" }}
           />
           <MDBCardBody>

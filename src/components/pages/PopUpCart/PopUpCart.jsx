@@ -53,18 +53,18 @@ export default function App({
                   <MDBCol size={12}>
                     <CarouselPopUp id={id} counter={counter} />
                   </MDBCol>
-                  <MDBListGroup style={{ minWidth: "22rem" }} light className=" text-start">
+                  <MDBListGroup style={{ minWidth: "22rem" }} light className=" text-start mx-2">
                     <MDBListGroupItem disabled aria-disabled="true" className=" fs-6"><b><i>Surf: {name}</i></b> </MDBListGroupItem>
                     <MDBListGroupItem disabled aria-disabled="true"><i>{info}</i></MDBListGroupItem>
-                    <MDBListGroupItem disabled aria-disabled="true"><i>Length- <b>{Length}</b></i></MDBListGroupItem>
-                    <MDBListGroupItem disabled aria-disabled="true"><i>Width- <b>{Width}</b></i></MDBListGroupItem>
-                    <MDBListGroupItem disabled aria-disabled="true"><i>Tail- <b>{Tail}</b></i></MDBListGroupItem>
-                    <MDBListGroupItem disabled aria-disabled="true"><i>price- <b>{price}</b></i></MDBListGroupItem>
+                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{price !== null ?"Price" +": "+price : " "}</b></i></MDBListGroupItem>
+                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{color !== null ?"Color" +": "+color : " "}</b></i></MDBListGroupItem>
+                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{Width !== null ?"Width" +": "+Width : " "}</b></i></MDBListGroupItem>
+                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{Tail !== null ?"Tail" +": "+Tail : ""}</b></i></MDBListGroupItem>
+                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{Length !== null ?"price" +": "+Length : ""}</b></i></MDBListGroupItem>
                   </MDBListGroup>
                 </MDBRow>
               </MDBContainer>{" "}
             </MDBModalBody>
-
             <MDBModalFooter>
               <MDBBtn color="secondary" onClick={toggleShow}>
                 Close
