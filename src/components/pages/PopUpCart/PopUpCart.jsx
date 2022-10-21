@@ -26,6 +26,7 @@ export default function App({
   color,
   img,
   info,
+  img1,
   counter,
 }) {
   const [basicModal, setBasicModal] = useState(false);
@@ -34,7 +35,7 @@ export default function App({
 
   return (
     <>
-      <MDBBtn className="mt-3" rounded onClick={toggleShow}>Click for more</MDBBtn>
+      <MDBBtn className="mt-3 bg-body text-black mb-3" rounded onClick={toggleShow}>Click for more</MDBBtn>
       <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
         <MDBModalDialog>
           <MDBModalContent>
@@ -51,7 +52,7 @@ export default function App({
               <MDBContainer>
                 <MDBRow>
                   <MDBCol size={12}>
-                    <CarouselPopUp id={id} counter={counter} />
+                    <CarouselPopUp img={img} img1={img1} />
                   </MDBCol>
                   <MDBListGroup style={{ minWidth: "22rem" }} light className=" text-start mx-2">
                     <MDBListGroupItem disabled aria-disabled="true" className=" fs-6"><b><i>Surf: {name}</i></b> </MDBListGroupItem>

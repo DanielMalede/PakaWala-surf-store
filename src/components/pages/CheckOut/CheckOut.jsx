@@ -19,6 +19,7 @@ import surfBoards from "../../../services/surfBoards.json";
 import PayPal from "../../../payPal/PayPal/PayPal";
 import { Button } from "react-bootstrap";
 import { ChackOutCartBox } from "../../features";
+import { Key } from "react-bootstrap-icons";
 
 function CheckOut() {
   const { surfItem } = useShoppingContext();
@@ -35,6 +36,7 @@ function CheckOut() {
               </MDBCardHeader>
               <MDBCardBody>
                 {surfItem.map((items) => (
+                  // console.log(items)
                   <ChackOutCartBox key={items.id} {...items} />
                 ))}
               </MDBCardBody>

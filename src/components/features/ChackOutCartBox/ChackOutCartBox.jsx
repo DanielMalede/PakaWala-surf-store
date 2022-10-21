@@ -12,12 +12,9 @@ import { useShoppingContext } from "../../../context/SurfBoardContext";
 import formatCurrency from "../../../utilities/formatCurrency";
 
 export default function ChackOutCartBox({ id, quantity }) {
-  const {
-    increaseCartQuantity,
-    decreaseCartQuantity,
-    removeFromCart,
-  } = useShoppingContext();
-  const [item, ] = useState(surfboards.find((item) => item.id === id));
+  const { increaseCartQuantity, decreaseCartQuantity, removeFromCart } =
+    useShoppingContext();
+  const [item] = useState(surfboards.find((item) => item.id === id));
   if (item == null) return null;
   return (
     <MDBRow>
@@ -27,7 +24,7 @@ export default function ChackOutCartBox({ id, quantity }) {
           rippleColor="light"
           className="bg-image rounded hover-zoom hover-overlay"
         >
-          <img alt="" src={`images/SurfBoards/${id}.webp`} className="w-100" />
+          <img alt="" src={item.img} className="w-100" />
           <a href="#!">
             <div
               className="mask"
@@ -63,12 +60,7 @@ export default function ChackOutCartBox({ id, quantity }) {
             <MDBIcon fas icon="minus" />
           </MDBBtn>
 
-          <MDBInput
-            value={quantity}
-            min={0}
-            type="number"
-            label="Quantity"
-          />
+          <MDBInput value={quantity} min={0} type="number" label="Quantity" />
 
           <MDBBtn
             onClick={() => increaseCartQuantity(id)}
@@ -76,7 +68,15 @@ export default function ChackOutCartBox({ id, quantity }) {
           >
             <MDBIcon fas icon="plus" />
           </MDBBtn>
-          <div onClick={()=> removeFromCart(id)} className=" d-flex align-content-center justify-content-center" style={{gap:".5rem"}}><MDBBtn size="md" rounded className="bg-danger">Remove</MDBBtn></div>
+          <div
+            onClick={() => removeFromCart(id)}
+            className=" d-flex align-content-center justify-content-center"
+            style={{ gap: ".5rem" }}
+          >
+            <MDBBtn size="md" rounded className="bg-danger">
+              Remove
+            </MDBBtn>
+          </div>
         </div>
 
         <p className="text-start text-md-center">

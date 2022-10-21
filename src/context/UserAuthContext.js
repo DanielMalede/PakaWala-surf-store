@@ -7,6 +7,7 @@ import {
   GoogleAuthProvider,
   signInWithPopup,
   FacebookAuthProvider ,
+  sendPasswordResetEmail
 } from "firebase/auth";
 import { auth } from "../components/fireBase/db";
 
@@ -37,6 +38,9 @@ export const UserAuthContextProvider = ({ children }) => {
     const facebookAuthProvider = new FacebookAuthProvider()
     return signInWithPopup(auth,facebookAuthProvider)
   }
+  const resetPassword = (email)=>{
+    return sendPasswordResetEmail(auth,email)
+  }
 
   useEffect(() => {
     const Unsubscribe = onAuthStateChanged(auth, (curruntUser) => {
@@ -48,7 +52,7 @@ export const UserAuthContextProvider = ({ children }) => {
   },[]);
 
   return (
-    <userAuthContext.Provider value={{ user, signUp, logIn, logOut ,googleSignIn,facebookSignIn}}>
+    <userAuthContext.Provider value={{ user, signUp, logIn, logOut ,googleSignIn,facebookSignIn,resetPassword}}>
       {children}
     </userAuthContext.Provider>
   );

@@ -6,7 +6,6 @@ import {
   MDBCardBody,
   MDBCol,
   MDBIcon,
-  MDBInput,
   MDBRow,
   MDBTypography,
 } from "mdb-react-ui-kit";
@@ -94,7 +93,6 @@ export default function Account() {
                     </MDBCol>
                     <MDBCol>
                       <MDBTypography tag="h4" style={{ color: "#495057" }}>
-                        {/* {user.metadata.lastSignInTime === undefined || null? "Not Available": user.metadata.lastSignInTime}    */}
                       </MDBTypography>
                     </MDBCol>
                   </MDBRow>

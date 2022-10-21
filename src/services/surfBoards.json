@@ -231,7 +231,7 @@
     "Width": "images/SurfBoards/1.webp",
     "Tail": "Squash",
     "color": "white",
-    "img": "images/SurfBoards33/.webp",
+    "img": "images/SurfBoards/33.webp",
     "img1": "images/SurfBoards/34.webp",
     "info": "The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for.",
     "category": "surf"
@@ -316,7 +316,7 @@
     "Tail": "Squash",
     "color": "spacial",
     "img": "images/SurfBoards/45.webp",
-    "img1": "images/SurfBoards/76.webp",
+    "img1": "images/SurfBoards/46.webp",
     "info": "The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for.",
     "category": "surf"
   },
@@ -380,12 +380,40 @@
     "id": 55,
     "counter": 56,
     "name": "GoPro - HERO11 Black Action Camera - Black",
-    "price": 2450.0,
+    "price": 2850.0,
     "color": "",
     "img": "images/SurfBoards/55.jpg",
     "img1": "images/SurfBoards/56.jpg",
     "info": "Shoot quality video with up to 5.3K resolution at 60 fps, perfect for maintaining serious detail even when zooming in. Plus, there's 8x slow motion at 2.7K, and you can pause videos and take 15.8MP still photos from 5.3K video.",
     "shortInfo": " Shoot quality video with up to 5.3K resolution at 60 fps",
+    "category": "cam"
+  }
+  ,
+
+  {
+    "id": 57,
+    "counter": 58,
+    "name": "GoPro - HERO11 Black ",
+    "price": 2450.0,
+    "color": "",
+    "img": "images/SurfBoards/gopro1.avif",
+    "img1": "images/SurfBoards/gopro2.avif",
+    "info": "Capture quality vlogs with this black GoPro HERO10 camera. The removable rechargeable 1720 mAh battery offers long shooting periods, while the rugged, waterproof design allows flexible use on different terrains. This GoPro HERO10 camera features a 1.4-inch screen for framing shots seamlessly, and the 23MP sensor captures 5.3K videos effortlessly.",
+    "shortInfo": " Capture quality vlogs with this black GoPro HERO10 camera. The removable rechargeable 1720 mAh battery offers long shooting periods..",
+    "category": "cam"
+  }
+  ,
+
+  {
+    "id": 59,
+    "counter": 60,
+    "name": "GoPro HERO11 Black Creator Edition",
+    "price": 3000.0,
+    "color": "",
+    "img": "images/SurfBoards/gopro4.avif",
+    "img1": "images/SurfBoards/gopro5.avif",
+    "info": "HERO11 Black Creator Edition is an all-in-one content-capturing powerhouse that makes blogging, filmmaking and live streaming easier than ever. Packing pro-quality 5.3K video and HyperSmooth 5.0 video stabilization, it gives you all the tools you need to tell your story in an ultralightweight design that fits into the palm of your hand. It's built around a powerful new image sensor that captures more of the scene with higher image quality, better stabilization and the flexibility to turn your footage into wide cinematic shots or extra-tall vertical shots for social posts. The comfortable battery grip features built-in buttons that let you control the camera with one hand while delivering four hours of 4K recording time per charge. This complete system also has a directional microphone and microphone input for enhanced audio, an LED light and multiple options for transferring footage, including wireless, wired and with your SD card.",
+    "shortInfo": "HERO11 Black Creator Edition is an all-in-one content-capturing powerhouse that makes blogging, filmmaking and live streaming easier than ever",
     "category": "cam"
   }
 ]

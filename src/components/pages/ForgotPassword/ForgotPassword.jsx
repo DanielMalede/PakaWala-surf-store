@@ -22,51 +22,37 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" to="/SignIn">
+        PaKaWaLa
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
     </Typography>
+    
   );
 }
 
 const theme = createTheme();
 
-export default function SignIn() {
+export default function ForgotPassword() {
   const [email,setEmail] = useState("")
-  const [password,setPassword] = useState("")
   const [error,setError] = useState("")
-  const { logIn ,googleSignIn,facebookSignIn}  = useUserAuth()
+  const [massage,setMassage] = useState("")
+  const {resetPassword}  = useUserAuth()
   const navigate = useNavigate()
   const handleSubmit = async (event) => {
     event.preventDefault();
     setError("");
     try {
-      await logIn(email,password)
-      navigate("/Home")
-    } catch (err) {
-      setError(err.message);
+        setMassage('')
+      await resetPassword(email)
+      navigate("/SignIn")
+      setMassage()
+      
+    } catch {
+      setError("Failed to reset password");
     };
   };
-  const handleGoogleSignIn = async (event)=>{
-    event.preventDefault()
-    try {
-      await googleSignIn()
-      navigate("/Home")
-    } catch (error) {
-      setError(error.message)
-    }
-  }
-  const handleFacebookSinIn = async (event)=>{
-    event.preventDefault()
-    try {
-      await facebookSignIn()
-      navigate("/Home")
-    } catch (error) {
-      setError(error.message)
-    }
-  }
   return (
     <ThemeProvider theme={theme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
@@ -99,9 +85,10 @@ export default function SignIn() {
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-              Sign in
+              Reset Password
             </Typography>
           {error && <Alert severity="error">{error}</Alert>}
+          {massage && <massage severity=" success">{error}</massage>}
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
               onChange={(e)=> setEmail(e.target.value)}
@@ -114,30 +101,13 @@ export default function SignIn() {
               autoComplete="email"
               autoFocus
             />
-            <TextField
-              onChange={(e)=> setPassword(e.target.value)}
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-            />
-              <FormControlLabel
-                control={<Checkbox value="remember" color="primary" />}
-                label="Remember me"
-              />
-                <GoogleLoginButton onClick={handleGoogleSignIn}/>
-                <FacebookLoginButton onClick={handleFacebookSinIn}/>
               <Button
                 type="submit"
                 fullWidth
                 variant="contained"
                 sx={{ mt: 1, mb: 2 }}
               >
-                Sign In
+                Reset Password
               </Button>
               <Grid container justifyContent="center">
                 <Grid item>
@@ -148,8 +118,8 @@ export default function SignIn() {
               </Grid>
               <Grid container justifyContent="center">
                 <Grid item>
-                <Link to="/ForgotPassword" variant="body2">
-                    {"Forgot Password?"}
+                  <Link to="/" variant="body2">
+                    Already have an account? Sign in
                   </Link>
                 </Grid>
               </Grid>

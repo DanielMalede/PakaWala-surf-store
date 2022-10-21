@@ -1,5 +1,5 @@
 import "./Header.css";
-import React from "react";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -32,8 +32,8 @@ const ResponsiveAppBar = () => {
       console.log(error.message);
     }
   };
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -111,6 +111,7 @@ const ResponsiveAppBar = () => {
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          
 {/* 
           <Typography
             variant="h5"
@@ -131,7 +132,15 @@ const ResponsiveAppBar = () => {
             <Link to="Home">LOGO</Link>
           </Typography> */}
 
-          <Box className="thisBox" sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box className="thisBox d-sm-flex align-items-center" sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Button 
+                className=" text-black"
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                <Avatar style={{ marginLeft: "15px" }} src='images/Logo/Logo.png' />
+
+                </Button>
             {pages.map((page) => (
               <Link key={page} to={page}>
                 <Button 

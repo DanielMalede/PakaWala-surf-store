@@ -44,12 +44,12 @@ function Card({
   return (
     <MDBContainer className="mt-5 mb-5">
       <MDBRow>
-        <MDBCard>
+        <MDBCard className=" h-100">
           
           <MDBCardImage
             onMouseOver={() => setOpen(true)}
             onMouseOut={unhover}
-            className="bg-image rounded hover-zoom hover-overlay"
+            className="bg-image "
             position="top"
             alt="..."
             src={
@@ -65,15 +65,13 @@ function Card({
             <MDBCardText>{color}</MDBCardText>
           </MDBCardBody>
           <MDBListGroup className=" text-start">
-            <MDBListGroupItem>Availability: {Length}</MDBListGroupItem>
-            <MDBListGroupItem>Size: {Length}</MDBListGroupItem>
             <MDBListGroupItem>Price: {formatCurrency(price)}</MDBListGroupItem>
           </MDBListGroup>
-          <MDBRow>
+          <MDBRow className="mt-3">
             <MDBCol size={12}>
               <div>
                 {quantity === 0 ? (
-                  <MDBBtn onClick={() => increaseCartQuantity(id)} rounded>
+                  <MDBBtn className="mb-3" onClick={() => increaseCartQuantity(id)} rounded>
                     + Add To Cart
                   </MDBBtn>
                 ) : (
@@ -85,7 +83,7 @@ function Card({
                       <MDBBtn
                         onClick={() => increaseCartQuantity(id)}
                         rounded
-                        className="bg-success"
+                        className="bg-success mb-3"
                       >
                         +
                       </MDBBtn>
@@ -121,6 +119,7 @@ function Card({
                   Tail={Tail}
                   color={color}
                   img={img}
+                  img1={img1}
                   info={info}
                   counter={counter}
                 />
