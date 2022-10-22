@@ -1,4 +1,3 @@
-import { Login } from "@mui/icons-material";
 import {Route, Routes } from "react-router-dom";
 import "./App.css";
 import {
@@ -14,10 +13,10 @@ import {
   Account,
   SideCart,
   Footer,ForgotPassword,
+  GoogleMaps,
 } from "./components/pages";
 import { SurfBoardsProvider } from "./context/SurfBoardContext";
 import {
-  UserAuthContextProvider,
   useUserAuth,
 } from "./context/UserAuthContext";
 
@@ -27,12 +26,11 @@ function App() {
     <div className="App">
         <SurfBoardsProvider>
         {!user ? "" : <Header />}
-        {console.log(user)}
           <Routes>
             <Route path="/Home" element={user!=null?<Home />:<SignIn/>} />
             <Route path="SignIn" element={<SignIn />} />
             <Route path="/signUp" element={<SignUp />} />
-            <Route path="/" element={<ProtectedPage><SignIn /></ProtectedPage>}/>
+            <Route path="/" element={<ProtectedPage><Home /></ProtectedPage>}/>
             <Route path="*" element={<NotFound />} />
             <Route path="About" element={user!=null?<About />:<SignIn/>} />
             <Route path="Store" element={user!=null?<Surfboards />:<SignIn/>} />
@@ -40,6 +38,7 @@ function App() {
             <Route path="SideCart" element={user!=null?<SideCart />:<SignIn/>} />
             <Route path="CheckOut" element={user!=null?<CheckOut />:<SignIn/>} />
             <Route path="ForgotPassword" element={<ForgotPassword/>} />
+            <Route path="GoogleMaps" element={user!=null?<GoogleMaps/>:<SignIn/>} />
           </Routes>
         {!user?"":<Footer/>}
         </SurfBoardsProvider>

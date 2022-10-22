@@ -2,9 +2,9 @@ import "./Home.css";
 import React, { useState } from "react";
 import surfBoardsJson from "../../../services/surfBoards.json";
 import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
-import { Card, SurfBoardCard } from "../../features";
+import {SurfBoardCard } from "../../features";
 function Home() {
-  const [data, seData] = useState(surfBoardsJson);
+  const [data, ] = useState(surfBoardsJson);
   let counter = 0;
   return (
     <div className="home p-0">
@@ -15,7 +15,9 @@ function Home() {
         <h1 className="mt-5">SurfBoards</h1>
           <div id="borderSurfs" >
         <MDBRow style={{border: "1px 1px solid black"}} className="px-5 surfBoardBorder pb-5">
-
+          
+{        // eslint-disable-next-line
+}        
           {data.map((item) => {
             const { id } = item;
             if (counter++ < 6) {

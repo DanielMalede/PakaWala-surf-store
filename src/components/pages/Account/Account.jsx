@@ -1,5 +1,5 @@
 import "./Account.css";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   MDBBtn,
   MDBCard,
@@ -14,10 +14,9 @@ import { Link } from "react-router-dom";
 
 export default function Account() {
   let { user } = useUserAuth();
-  const [userFname, setUserFname] = useState(user.displayName);
 
   return (
-    <>
+    <span>
       <div className="mx-auto gradient-custom  ">
         <MDBRow className="pt-3 mx-3">
           <MDBCol md="3">
@@ -109,7 +108,7 @@ export default function Account() {
           </MDBCol>
         </MDBRow>
       </div>
-    </>
+    </span>
   );
 }
 

@@ -1,5 +1,5 @@
 import "./Surfboards.css";
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import { Card } from "../../features";
 import {
   MDBContainer,
@@ -15,7 +15,7 @@ import {
 import surfBoards from "../../../services/surfBoards.json";
 
 function Surfboards() {
-  const [search, setSearch] = useState("");
+  // const [search, setSearch] = useState("");
   const [data, setData] = useState(surfBoards);
   const [colors, setColors] = useState("");
   const filterResult = (BtnResult) => {
@@ -48,7 +48,7 @@ function Surfboards() {
       <MDBContainer>
         <form className="mt-5 ">
           <MDBInput
-            onChange={(e) => setSearch(e.target.value)}
+            // onChange={(e) => setSearch(e.target.value)}
             label="Text input"
             id="typeText"
             type="text"

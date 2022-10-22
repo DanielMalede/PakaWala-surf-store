@@ -1,19 +1,21 @@
 import "./GoogleMaps.css";
 import React from "react";
 import { useLoadScript } from '@react-google-maps/api';
-
-
-function template() {
+import {Map} from '../../features/index'
+ const googleMapsApiKeys =process.env.REACT_APP_ANI_MAPA_API_KEY
+ const libraries = ["places"]
+function GoogleMaps() {
   const {isLoaded} = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
-    libraries: ["places"],
+    googleMapsApiKey : googleMapsApiKeys,
+    libraries,
 })
+
 if (!isLoaded) return <div>Loading...</div>
   return (
-    <div className="google-maps">
-      <h1>GoogleMaps</h1>
+    <div className="">
+      <Map/>
     </div>
   );
 };
 
-export default template;
+export default GoogleMaps;

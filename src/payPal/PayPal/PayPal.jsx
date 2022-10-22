@@ -1,8 +1,6 @@
 import "./PayPal.css";
 import React, { useEffect, useRef } from "react";
-import { useShoppingContext } from "../../context/SurfBoardContext";
 function PayPal() {
-  const { surfItem } = useShoppingContext();
   const paypal = useRef()
   useEffect(()=>{
     window.paypal.Buttons({
@@ -28,7 +26,6 @@ function PayPal() {
       },
       onError:(err)=>{
         console.log(err);
-        surfItem = []
       }
     }).render(paypal.current)
   },[])

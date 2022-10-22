@@ -3,18 +3,12 @@ import React, { useState } from "react";
 import {
   MDBCard,
   MDBCardImage,
-  MDBCardBody,
-  MDBCardTitle,
-  MDBCardText,
-  MDBListGroup,
-  MDBListGroupItem,
   MDBContainer,
   MDBRow,
   MDBBtn,
   MDBCol,
 } from "mdb-react-ui-kit";
 import { useShoppingContext } from "../../../context/SurfBoardContext";
-import formatCurrency from "../../../utilities/formatCurrency";
 import { PopUpCart } from "../../pages/index";
 
 export default function SurfBoardCard({

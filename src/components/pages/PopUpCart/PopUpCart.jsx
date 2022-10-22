@@ -34,7 +34,7 @@ export default function App({
   const toggleShow = () => setBasicModal(!basicModal);
 
   return (
-    <>
+    <div>
       <MDBBtn className="mt-3 bg-body text-black mb-3" rounded onClick={toggleShow}>Click for more</MDBBtn>
       <MDBModal show={basicModal} setShow={setBasicModal} tabIndex="-1">
         <MDBModalDialog>
@@ -57,14 +57,14 @@ export default function App({
                   <MDBListGroup style={{ minWidth: "22rem" }} light className=" text-start mx-2">
                     <MDBListGroupItem disabled aria-disabled="true" className=" fs-6"><b><i>Surf: {name}</i></b> </MDBListGroupItem>
                     <MDBListGroupItem disabled aria-disabled="true"><i>{info}</i></MDBListGroupItem>
-                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{price !== null ?"Price" +": "+price : " "}</b></i></MDBListGroupItem>
-                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{color !== null ?"Color" +": "+color : " "}</b></i></MDBListGroupItem>
-                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{Width !== null ?"Width" +": "+Width : " "}</b></i></MDBListGroupItem>
-                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{Tail !== null ?"Tail" +": "+Tail : ""}</b></i></MDBListGroupItem>
-                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{Length !== null ?"price" +": "+Length : ""}</b></i></MDBListGroupItem>
+                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{price !== null ?"Price " +price : " "}</b></i></MDBListGroupItem>
+                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{color !== null ?"Color "+color : " "}</b></i></MDBListGroupItem>
+                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{Width !== null ?"Width "+Width : " "}</b></i></MDBListGroupItem>
+                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{Tail !== null ?"Tail "+Tail : ""}</b></i></MDBListGroupItem>
+                    <MDBListGroupItem disabled aria-disabled="true"><i> <b>{Length !== null ?"price " +Length : ""}</b></i></MDBListGroupItem>
                   </MDBListGroup>
                 </MDBRow>
-              </MDBContainer>{" "}
+              </MDBContainer>
             </MDBModalBody>
             <MDBModalFooter>
               <MDBBtn color="secondary" onClick={toggleShow}>
@@ -74,6 +74,6 @@ export default function App({
           </MDBModalContent>
         </MDBModalDialog>
       </MDBModal>
-    </>
+    </div>
   );
 }
