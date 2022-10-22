@@ -52,8 +52,7 @@ export default function SurfBoardCard({
             }
             style={{ objectFit: "cover" }}
           />
-          <MDBRow className="mt-4">
-            <MDBCol size={12}>
+          <div className="mt-4">
               <div>
                 {quantity === 0 ? (
                   <MDBBtn onClick={() => increaseCartQuantity(id)} rounded>
@@ -106,10 +105,10 @@ export default function SurfBoardCard({
                   img={img}
                   info={info}
                   counter={counter}
+                  img1={img1}
                 />
               </div>
-            </MDBCol>
-          </MDBRow>
+          </div>
         </MDBCard>
       </MDBRow>
     </MDBContainer>

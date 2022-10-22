@@ -40,7 +40,7 @@ export default function App({
         <MDBModalDialog>
           <MDBModalContent>
             <MDBModalHeader>
-              <MDBModalTitle>Modal title</MDBModalTitle>
+              <MDBModalTitle>Product View</MDBModalTitle>
               <MDBBtn
                 className="btn-close"
                 color="none"

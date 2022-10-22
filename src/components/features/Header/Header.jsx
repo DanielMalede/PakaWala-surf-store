@@ -54,7 +54,7 @@ const ResponsiveAppBar = () => {
     <AppBar className=" bg-light"  position="static">
       <Container className="bg-light"  maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box  sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -63,9 +63,10 @@ const ResponsiveAppBar = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon className="text-black"/>
             </IconButton>
             <Menu
+            
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -80,7 +81,7 @@ const ResponsiveAppBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: "block", md: "none" }
               }}
             >
               {pages.map((page) => (

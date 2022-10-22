@@ -54,8 +54,8 @@ function Surfboards() {
             type="text"
           />
         </form>
-        <h1 className="  fw-lighter fw fs-1 mt-5 mb-5">Our Store</h1>
-        <MDBContainer>
+        <h1 className="  fw-lighter fw fs-1 mt-5 mb-5 text-center">Our Store</h1>
+        <MDBContainer className=" text-center">
           <div className=" d-flex justify-content-center  mt-4 mb-3">
             <MDBRow>
               <MDBCol className="mt-2  px-md-4 col-12 col-md-3">

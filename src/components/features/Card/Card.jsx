@@ -42,7 +42,7 @@ function Card({
     setOpen(false);
   };
   return (
-    <MDBContainer className="mt-5 mb-5">
+    <MDBContainer data-testid="testForContainer" className=" mt-5 mb-5">
       <MDBRow>
         <MDBCard className=" h-100">
           
@@ -68,7 +68,7 @@ function Card({
             <MDBListGroupItem>Price: {formatCurrency(price)}</MDBListGroupItem>
           </MDBListGroup>
           <MDBRow className="mt-3">
-            <MDBCol size={12}>
+            <MDBCol className="text-center" size={12}>
               <div>
                 {quantity === 0 ? (
                   <MDBBtn className="mb-3" onClick={() => increaseCartQuantity(id)} rounded>

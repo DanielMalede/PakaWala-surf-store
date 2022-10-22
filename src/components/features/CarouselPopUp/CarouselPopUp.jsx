@@ -17,7 +17,7 @@ export default function CarouselPopUp({id,counter,img,img1}) {
       {img1}
       <MDBCarouselItem
         className='w-100 d-block'
-        itemId={2}
+        itemId={counter}
         src={img1}
         alt='...'
       />

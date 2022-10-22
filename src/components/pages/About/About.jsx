@@ -71,7 +71,7 @@ function About() {
             <img className=" p-md-5" src="images/About/pic3.jpg" alt="" />
           </MDBCol>
         </MDBRow>
-        <div className=" mx-md-5 ">
+        <div className=" mx-md-5  text-center">
           <h2 className=" fw-bold fs-1 mt-5">How can we help you ?</h2>
           <p className="mx-md-5 fs-5 fw-light mt-md-4 mt-3">
             <i>
@@ -92,7 +92,7 @@ function About() {
           </div>
         </div>
         <div className="aboutBTN d-flex justify-content-center mb-10 mt-3">
-          <MDBBtn>Send</MDBBtn>
+          <MDBBtn >Send</MDBBtn>
         </div>
       </MDBContainer>
     </div>
