@@ -101,7 +101,9 @@ export default function SignIn() {
             <Typography component="h1" variant="h5">
               Sign in
             </Typography>
+
           {error && <Alert severity="error">{error}</Alert>}
+          
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
               onChange={(e)=> setEmail(e.target.value)}
