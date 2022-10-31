@@ -37,6 +37,7 @@ function App() {
             <Route path="SideCart" element={user!=null?<SideCart />:<SignIn/>} />
             <Route path="CheckOut" element={user!=null?<CheckOut />:<SignIn/>} />
             <Route path="ForgotPassword" element={<ForgotPassword/>} />
+            <Route path="ecommerce-store" element={<Home/>} />
           </Routes>
         {!user?"":<Footer/>}
         </SurfBoardsProvider>
