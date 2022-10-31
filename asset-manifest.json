@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/DanielMalede/ecommerce-store/static/css/main.0e9209f4.css",
+    "main.js": "/DanielMalede/ecommerce-store/static/js/main.4e1236a1.js",
+    "static/js/496.fd6ce1a3.chunk.js": "/DanielMalede/ecommerce-store/static/js/496.fd6ce1a3.chunk.js",
+    "static/media/notfound.jpg": "/DanielMalede/ecommerce-store/static/media/notfound.5168b2556ce2f032bd0b.jpg",
+    "index.html": "/DanielMalede/ecommerce-store/index.html",
+    "main.0e9209f4.css.map": "/DanielMalede/ecommerce-store/static/css/main.0e9209f4.css.map",
+    "main.4e1236a1.js.map": "/DanielMalede/ecommerce-store/static/js/main.4e1236a1.js.map",
+    "496.fd6ce1a3.chunk.js.map": "/DanielMalede/ecommerce-store/static/js/496.fd6ce1a3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0e9209f4.css",
+    "static/js/main.4e1236a1.js"
+  ]
+}
