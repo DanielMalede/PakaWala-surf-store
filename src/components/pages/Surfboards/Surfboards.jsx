@@ -46,6 +46,7 @@ function Surfboards() {
         />
       </div>
       <MDBContainer>
+<<<<<<< HEAD
         <form className="mt-5 ">
           <MDBInput
             // onChange={(e) => setSearch(e.target.value)}
@@ -137,6 +138,15 @@ function Surfboards() {
                   Camera's
                 </MDBBtn>
               </MDBCol>
+=======
+        <MDBRow>
+      {surfBoards.map(item=> (
+          <MDBCol key={item.id} size="12" xl='3' lg='4' md='6' sm='12' >
+            <Card {...item}/>
+            </MDBCol>
+            ))}
+            
+>>>>>>> 0504318857224ddf4ffd8eff6dcce0bc1b50208d
             </MDBRow>
           </div>
         </MDBContainer>

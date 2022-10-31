@@ -7,10 +7,18 @@ import {
   MDBTextArea,
   MDBBtn,
 } from "mdb-react-ui-kit";
+<<<<<<< HEAD
 function About() {
   return (
     <div className="about">
       <img className="aboutPic" src="images/About/pic7.jpg" alt="" />
+=======
+
+function About() {
+  return (
+    <div className="about">
+          <img className="aboutPic" src="images/About/pic7.jpg" alt="" />
+>>>>>>> 0504318857224ddf4ffd8eff6dcce0bc1b50208d
       <MDBContainer className="mt-5">
         <MDBRow className="mt-md-5">
           <MDBCol size={12} md="6">
@@ -53,10 +61,14 @@ function About() {
             </p>
           </MDBCol>
           <MDBCol size={12} md="6">
+<<<<<<< HEAD
             <h2 className=" fs-1 mt-md-5 p-md-4 pt-md-5">
               <b>HIGH QUALITY</b>
             </h2>
             <p className=" aboutText fs-5 fw-light mx-lg-5 ">
+=======
+            <p className=" aboutText fs-5 fw-light mx-lg-5 p-md-5">
+>>>>>>> 0504318857224ddf4ffd8eff6dcce0bc1b50208d
               <i>
                 For 40 years, our design and manufacturing teams have not
                 compromised on quality! With professional focus groups, we test
@@ -70,7 +82,11 @@ function About() {
             <img className=" p-md-5" src="images/About/pic3.jpg" alt="" />
           </MDBCol>
         </MDBRow>
+<<<<<<< HEAD
         <div className=" mx-md-5  text-center">
+=======
+        <div className=" mx-md-5 ">
+>>>>>>> 0504318857224ddf4ffd8eff6dcce0bc1b50208d
           <h2 className=" fw-bold fs-1 mt-5">How can we help you ?</h2>
           <p className="mx-md-5 fs-5 fw-light mt-md-4 mt-3">
             <i>
