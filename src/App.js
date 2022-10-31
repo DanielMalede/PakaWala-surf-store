@@ -13,7 +13,6 @@ import {
   Account,
   SideCart,
   Footer,ForgotPassword,
-  GoogleMaps,
 } from "./components/pages";
 import { SurfBoardsProvider } from "./context/SurfBoardContext";
 import {
@@ -38,7 +37,6 @@ function App() {
             <Route path="SideCart" element={user!=null?<SideCart />:<SignIn/>} />
             <Route path="CheckOut" element={user!=null?<CheckOut />:<SignIn/>} />
             <Route path="ForgotPassword" element={<ForgotPassword/>} />
-            <Route path="GoogleMaps" element={user!=null?<GoogleMaps/>:<SignIn/>} />
           </Routes>
         {!user?"":<Footer/>}
         </SurfBoardsProvider>

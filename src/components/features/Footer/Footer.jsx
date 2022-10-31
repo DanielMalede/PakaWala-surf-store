@@ -34,55 +34,31 @@ export default function Footer() {
                 Paka Walla
               </h6>
               <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit.
+              We are stoked watersports people, whether it’s kitesurfing, surfing, foiling or wing surfing, that happen to sell the gear we love. And we are excited to help other people gear up for their new passion too.
               </p>
             </MDBCol>
 
-            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-              <h6 className='text-uppercase fw-bold mb-4'>surfboards</h6>
-              <p>
-                <a href='#!' className='text-reset'>
-                 
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                  
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                
-                </a>
-              </p>
-              <p>
-                <a href='#!' className='text-reset'>
-                
-                </a>
-              </p>
-            </MDBCol>
 
             <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Brands</h6>
               <p>
-                <a href='#!' className='text-reset'>
-                  Pricing
+                <a href='https://www.billabong.com/mens/' className='text-reset'>
+                Billabong
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Settings
+                <a href='https://us.oneill.com/' className='text-reset'>
+                O'neill
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Orders
+                <a href='https://www.ripcurl.com/us/' className='text-reset'>
+                Rip Curl
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
-                  Help
+                <a href='https://www.quiksilver.com/' className='text-reset'>
+                Quik Silver
                 </a>
               </p>
             </MDBCol>
@@ -95,7 +71,7 @@ export default function Footer() {
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                DanielMalede.com
+                DanielMalede@gmail.com
               </p>
               <p>
                 <MDBIcon icon="phone" className="me-3" /> +972 52 - 473 - 8547

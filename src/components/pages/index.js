@@ -8,11 +8,8 @@ import ProtectedPage from './ProtectedPage/ProtectedPage'
 import About from './About/About'
 import Surfboards from "./Surfboards/Surfboards";
 import Account from "./Account/Account";
-
 import SideCart from "./SideCart/SideCart";
 import PopUpCart from "./PopUpCart/PopUpCart";
 import CheckOut from '../pages/CheckOut/CheckOut'
 import ForgotPassword from "./ForgotPassword/ForgotPassword";
-import GoogleMaps from "./GoogleMaps/GoogleMaps";
-
-export { Footer, Header, Home, SignIn , SignUp, NotFound ,ProtectedPage,Surfboards,About,Account,SideCart,PopUpCart,CheckOut,ForgotPassword,GoogleMaps};
+export { Footer, Header, Home, SignIn , SignUp, NotFound ,ProtectedPage,Surfboards,About,Account,SideCart,PopUpCart,CheckOut,ForgotPassword};

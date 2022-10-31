@@ -7,8 +7,6 @@ import {
   MDBTextArea,
   MDBBtn,
 } from "mdb-react-ui-kit";
-import GoogleMaps from "../GoogleMaps/GoogleMaps";
-
 function About() {
   return (
     <div className="about">
@@ -95,9 +93,6 @@ function About() {
         <div className="aboutBTN d-flex justify-content-center mb-10 mt-3">
           <MDBBtn>Send</MDBBtn>
         </div>
-        <MDBContainer className="d-flex justify-content-center">
-          <GoogleMaps />
-        </MDBContainer>
       </MDBContainer>
     </div>
   );
