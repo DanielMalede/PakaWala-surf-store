@@ -65,16 +65,12 @@ export default function ChackOutCartBox({ id, quantity }) {
             <MDBIcon fas icon="minus" />
           </MDBBtn>
 
-<<<<<<< HEAD
-          <MDBInput value={quantity} min={0} type="number" label="Quantity" />
-=======
           <MDBInput
             value={quantity}
             min={0}
             type="number"
             label="Quantity"
           />
->>>>>>> 0504318857224ddf4ffd8eff6dcce0bc1b50208d
 
           <MDBBtn
             onClick={() => increaseCartQuantity(id)}

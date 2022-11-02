@@ -1,16 +1,43 @@
 import "./Surfboards.css";
-import React from "react";
+import React, { useState } from "react";
 import { Card } from "../../features";
-import {MDBContainer,MDBRow,MDBCol,} from "mdb-react-ui-kit";
+import {  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBInput,
+  MDBBtn,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem,
+  MDBDropdown,} from "mdb-react-ui-kit";
 import surfBoards from "../../../services/surfBoards.json";
 function Surfboards() {
+    // const [search, setSearch] = useState("");
+    const [data, setData] = useState(surfBoards);
+    const [colors, setColors] = useState("");
+    const filterResult = (BtnResult) => {
+      const result = surfBoards.filter((curData) => {
+        return curData.category.toLowerCase() === BtnResult.toLowerCase();
+      });
+      const color = surfBoards.filter((curData) => {
+        return curData.color.toLowerCase() === BtnResult;
+      });
+      // const info = surfBoards.filter((item) => {
+      //   return search.toLowerCase() === ""
+      //     ? item
+      //     : item.name.toLowerCase().includes(search);
+      // });
+  
+      setData(result);
+      setColors(color);
+      // setSearch(info);
+    };
   return (
     <div className="cart">
       <div>
       <img style={{width:"100vw",height:"40vh"}} src='images/Home/headPic.jpg' className=' shadow-6' alt='...' />
       </div>
       <MDBContainer>
-<<<<<<< HEAD
         <form className="mt-5 ">
           <MDBInput
             // onChange={(e) => setSearch(e.target.value)}
@@ -102,15 +129,6 @@ function Surfboards() {
                   Camera's
                 </MDBBtn>
               </MDBCol>
-=======
-        <MDBRow>
-      {surfBoards.map(item=> (
-          <MDBCol key={item.id} size="12" xl='3' lg='4' md='6' sm='12' >
-            <Card {...item}/>
-            </MDBCol>
-            ))}
-            
->>>>>>> 0504318857224ddf4ffd8eff6dcce0bc1b50208d
             </MDBRow>
           </div>
         </MDBContainer>

@@ -1,10 +1,12 @@
 import "./Home.css";
-<<<<<<< HEAD
 import React, { useState } from "react";
 import surfBoardsJson from "../../../services/surfBoards.json";
 import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import { SurfBoardCard } from "../../features";
 function Home() {
+  const [data] = useState(surfBoardsJson);
+  let counter = 0;
+
   return (
     <div className="home p-0">
       <div>
@@ -57,15 +59,6 @@ function Home() {
           <img className="imagesHome p-0" src="images/Home/pic13.avif" alt="" />
           </MDBCol>
         </MDBRow> */}
-=======
-import React from "react";
-import { CarouselBootStrap } from "../../../components/pages/index";
-
-function Home() {
-  return (
-    <div className="home ">
-        <CarouselBootStrap />
->>>>>>> 0504318857224ddf4ffd8eff6dcce0bc1b50208d
     </div>
   );
 }
