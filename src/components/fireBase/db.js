@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import{getAuth} from 'firebase/auth'
 
 
-const firebaseapi =  "AIzaSyA8Y42IFkbckvULcMmbUiwuZ_ttaNJBNIw"
+const firebaseapi =  process.env.REACT_APP_HOT_API_KEY
 const firebaseConfig = {
   apiKey: firebaseapi,
   authDomain: "my-store-fd987.firebaseapp.com",
