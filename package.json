@@ -3,6 +3,7 @@
   "homepage": "https://DanielMalede.github.io/ecommerce-store",
   "version": "0.1.0",
   "private": true,
+  
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
