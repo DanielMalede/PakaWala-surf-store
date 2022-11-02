@@ -12,18 +12,19 @@
     "info":"The Mid 6 is designed to bring maximum mid-length performance to all types of waves."
   },
   {
-    "id":3,
-    "counter":4,
-    "name": "Dan Mann Sweet Potato Firewire HE 5'6",
-    "price": 950.00,
-    "Length":6,
-    "Width": "22",
+    "id": 3,
+    "counter": 4,
+    "name": "USED Vernor Barracuda Fish EPS/Epoxy 7'6",
+    "price": 595.0,
+    "Length": 6,
+    "Width": "images/SurfBoards/1.webp",
     "Tail": "Swallow",
-    "color":"green",
-    "img":"",
-    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
-  }
-  ,
+    "color": "green",
+    "img": "images/SurfBoards/3.webp",
+    "img1": "images/SurfBoards/4.webp",
+    "info": "The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for.",
+    "category": "surf"
+  },
   {
     "id":5,
     "counter":6,

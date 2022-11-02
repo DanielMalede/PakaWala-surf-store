@@ -1,6 +1,10 @@
 @media screen and (min-width: 600px) {
   .aboutText {
+<<<<<<< HEAD
+    height: 30vh;
+=======
     height: 100vh;
+>>>>>>> 0504318857224ddf4ffd8eff6dcce0bc1b50208d
     display: flex;
     align-items: center;
     justify-content: center;
