@@ -21,7 +21,6 @@ export const UserAuthContextProvider = ({ children }) => {
   const [user, setUser] = useState("");
   
   const logIn = (email, password) => {
-    console.log("email", email);
     return signInWithEmailAndPassword(auth, email, password);
   };
   const signUp = (email, password) => {
