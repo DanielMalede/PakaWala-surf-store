@@ -19,7 +19,7 @@ function SideCart({ isOpen }) {
               <CartItem key={items.id} {...items} />
             ))}
             <div className="ms-auto fw-bold fs-4">
-              Tatal{" "}
+              Total{" "}
               {formatCurrency(
                 surfItem.reduce((total, surfItem) => {
                   const item = surfBoards.find(

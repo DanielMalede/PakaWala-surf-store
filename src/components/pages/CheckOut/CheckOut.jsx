@@ -39,16 +39,6 @@ function CheckOut() {
                 ))}
               </MDBCardBody>
                 </MDBCard>
-
-            <MDBCard className="mb-4">
-              <MDBCardBody>
-                <p>
-                  <strong>Expected shipping delivery</strong>
-                </p>
-                <p className="mb-0">12.10.2020 - 14.10.2020</p>
-              </MDBCardBody>
-            </MDBCard> 
-
             <MDBCard className="mb-4 mb-lg-0">
               <MDBCardBody>
                 <p>

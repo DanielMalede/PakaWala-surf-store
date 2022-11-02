@@ -12,8 +12,7 @@ import { useShoppingContext } from "../../../context/SurfBoardContext";
 import formatCurrency from "../../../utilities/formatCurrency";
 
 export default function ChackOutCartBox({ id, quantity }) {
-  const { increaseCartQuantity, decreaseCartQuantity, removeFromCart } =
-    useShoppingContext();
+  const { increaseCartQuantity, decreaseCartQuantity, removeFromCart } =useShoppingContext();
   const [item] = useState(surfboards.find((item) => item.id === id));
   if (item == null) return null;
   return (
