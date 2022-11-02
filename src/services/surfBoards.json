@@ -1,10 +1,19 @@
 [
   {
+<<<<<<< HEAD
     "id": 1,
     "counter": 2,
     "name": "Mauricrgebree Cole Reverse Vee Hybrid PU/Poly 6'4",
     "Width": "20",
     "price": 750.0,
+=======
+    "id":1,
+    "counter":2,
+    "name": "USED Maurice Cole Reverse Vee Twin Pin 6'7",
+    "Width": "22",
+    "price": 595.00,
+    "Length":6.7,
+>>>>>>> 0504318857224ddf4ffd8eff6dcce0bc1b50208d
     "Tail": "Round Pin",
     "color": "white",
     "img": "images/SurfBoards/1.webp",
@@ -13,6 +22,7 @@
     "category": "surf"
   },
   {
+<<<<<<< HEAD
     "id": 3,
     "counter": 4,
     "name": "USED Vernor Barracuda Fish EPS/Epoxy 7'6",
@@ -26,6 +36,20 @@
     "info": "The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for.",
     "category": "surf"
   },
+=======
+    "id":3,
+    "counter":4,
+    "name": "Dan Mann Sweet Potato Firewire HE 5'6",
+    "price": 950.00,
+    "Length":6,
+    "Width": "22",
+    "Tail": "Swallow",
+    "color":"green",
+    "img":"",
+    "info":"The new modernized Maurice Cole Reverse Vee features modernized rockers, rails, bottom shape and dimensions, paired with the legendary rail surfing the Reverse Vee is known for."
+  }
+  ,
+>>>>>>> 0504318857224ddf4ffd8eff6dcce0bc1b50208d
   {
     "id": 5,
     "counter": 6,
