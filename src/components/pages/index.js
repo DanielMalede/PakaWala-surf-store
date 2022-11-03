@@ -7,10 +7,9 @@ import NotFound from "./NotFound/NotFound";
 import ProtectedPage from './ProtectedPage/ProtectedPage'
 import About from './About/About'
 import Surfboards from "./Surfboards/Surfboards";
-import ImageGallery from "../features/ImageGallery/ImageGallery";
 import CarouselBootStrap from "../features/CarouselBootStrap/CarouselBootStrap";
 import Account from "./Account/Account";
 import SideCart from "./SideCart/SideCart";
 import PopUpCart from "./PopUpCart/PopUpCart";
 import CheckOut from '../pages/CheckOut/CheckOut'
-export { Footer, Header, Home, SignIn , SignUp, NotFound ,ProtectedPage,Surfboards,About,ImageGallery,CarouselBootStrap,Account,SideCart,PopUpCart,CheckOut};
+export { Footer, Header, Home, SignIn , SignUp, NotFound ,ProtectedPage,Surfboards,About,CarouselBootStrap,Account,SideCart,PopUpCart,CheckOut};
