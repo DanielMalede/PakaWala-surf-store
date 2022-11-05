@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <UserAuthContextProvider>
       <SurfBoardsProvider>
-      <Router basename="/ecommerce-store">
+      <Router basename="/">
         <App />
         <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
