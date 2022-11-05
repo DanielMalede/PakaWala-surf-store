@@ -15,8 +15,6 @@ import {
 } from "mdb-react-ui-kit";
 import formatCurrency from "../../../utilities/formatCurrency";
 import { useShoppingContext } from "../../../context/SurfBoardContext";
-import { Button } from "react-bootstrap";
-import surfBoards from "../../../services/surfBoards.json";
 import { PopUpCart } from "../../pages/index";
 
 function Card({
@@ -29,6 +27,7 @@ function Card({
   color,
   img,
   info,
+  img1,
   counter,
 }) {
   const {
@@ -43,36 +42,36 @@ function Card({
     setOpen(false);
   };
   return (
-    <MDBContainer className="mt-5">
+    <MDBContainer data-testid="testForContainer" className=" mt-5 mb-5">
       <MDBRow>
-        <MDBCard>
+        <MDBCard className=" h-100">
+          
           <MDBCardImage
             onMouseOver={() => setOpen(true)}
             onMouseOut={unhover}
-            className=""
+            className="bg-image "
             position="top"
             alt="..."
             src={
               open
-                ? `images/SurfBoards/${counter}.webp`
-                : `images/SurfBoards/${id}.webp`
+                ? img1
+                : img
             }
+            
             style={{ objectFit: "cover" }}
           />
           <MDBCardBody>
             <MDBCardTitle>{name}</MDBCardTitle>
             <MDBCardText>{color}</MDBCardText>
           </MDBCardBody>
-          <MDBListGroup className=" text-start" flush>
-            <MDBListGroupItem>Availability: {Length}</MDBListGroupItem>
-            <MDBListGroupItem>Size: {Length}</MDBListGroupItem>
+          <MDBListGroup className=" text-start">
             <MDBListGroupItem>Price: {formatCurrency(price)}</MDBListGroupItem>
           </MDBListGroup>
-          <MDBRow>
-            <MDBCol size={12}>
+          <MDBRow className="mt-3">
+            <MDBCol className="text-center" size={12}>
               <div>
                 {quantity === 0 ? (
-                  <MDBBtn onClick={() => increaseCartQuantity(id)} rounded>
+                  <MDBBtn className="mb-3" onClick={() => increaseCartQuantity(id)} rounded>
                     + Add To Cart
                   </MDBBtn>
                 ) : (
@@ -84,7 +83,7 @@ function Card({
                       <MDBBtn
                         onClick={() => increaseCartQuantity(id)}
                         rounded
-                        className="bg-success"
+                        className="bg-success mb-3"
                       >
                         +
                       </MDBBtn>
@@ -120,6 +119,7 @@ function Card({
                   Tail={Tail}
                   color={color}
                   img={img}
+                  img1={img1}
                   info={info}
                   counter={counter}
                 />

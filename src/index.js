@@ -9,21 +9,16 @@ import "mdb-react-ui-kit/dist/css/mdb.min.css";
 import { SurfBoardsProvider } from "./context/SurfBoardContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <UserAuthContextProvider>
       <SurfBoardsProvider>
-        <Router>
-          <App />
-          <link
-            href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-            rel="stylesheet"
-          />
-          <link
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-            rel="stylesheet"
-          />
-        </Router>
+      <Router basename="/ecommerce-store">
+        <App />
+        <link href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+      </Router>
       </SurfBoardsProvider>
     </UserAuthContextProvider>
   </React.StrictMode>

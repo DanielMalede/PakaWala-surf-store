@@ -1,5 +1,3 @@
-import { useState } from "react";
-import { Button } from "react-bootstrap";
 import {Route, Routes } from "react-router-dom";
 import "./App.css";
 import {
@@ -10,40 +8,38 @@ import {
   ProtectedPage,
   SignIn,
   SignUp,
-  Footer,
   About,
   Surfboards,
   Account,
   SideCart,
+  Footer,ForgotPassword,
 } from "./components/pages";
 import { SurfBoardsProvider } from "./context/SurfBoardContext";
 import {
-  UserAuthContextProvider,
   useUserAuth,
 } from "./context/UserAuthContext";
 
 function App() {
-  const [checkOut,setChackOut] = useState(false)
   let { user } = useUserAuth();
   return (
     <div className="App">
         <SurfBoardsProvider>
-      <UserAuthContextProvider>
         {!user ? "" : <Header />}
           <Routes>
             <Route path="/Home" element={user!=null?<Home />:<SignIn/>} />
             <Route path="SignIn" element={<SignIn />} />
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/" element={<ProtectedPage><Home /></ProtectedPage>}/>
+            <Route path="/ecommerce-store" element={<ProtectedPage><Home /></ProtectedPage>}/>
             <Route path="*" element={<NotFound />} />
             <Route path="About" element={user!=null?<About />:<SignIn/>} />
-            <Route path="Surfboards" element={user!=null?<Surfboards />:<SignIn/>} />
+            <Route path="Store" element={user!=null?<Surfboards />:<SignIn/>} />
             <Route path="Account" element={user!=null?<Account />:<SignIn/>} />
             <Route path="SideCart" element={user!=null?<SideCart />:<SignIn/>} />
             <Route path="CheckOut" element={user!=null?<CheckOut />:<SignIn/>} />
+            <Route path="ForgotPassword" element={<ForgotPassword/>} />
           </Routes>
         {!user?"":<Footer/>}
-      </UserAuthContextProvider>
         </SurfBoardsProvider>
     </div>
   );

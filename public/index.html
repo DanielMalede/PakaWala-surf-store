@@ -16,7 +16,16 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://www.paypal.com/sdk/js?client-id=AU8pKwKCYE-aI9ghWaUvjnOelMJ4cuzXM1L9BnNhEuwu7cGDaoafXMr1bHHQzYjc43PU7Fwcyn7yJPJL&currency=ILS"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXmBhUo6-Sk1HWU5hVJkNLeXS3Ce4Cotw/"></script> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -26,6 +35,24 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
     <title>React App</title>
   </head>
   <body>

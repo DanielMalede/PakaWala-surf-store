@@ -6,7 +6,6 @@ import { SurfBoardCard } from "../../features";
 function Home() {
   const [data] = useState(surfBoardsJson);
   let counter = 0;
-
   return (
     <div className="home p-0">
       <div>

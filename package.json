@@ -1,32 +1,42 @@
 {
   "name": "ecommerce-store",
+  "homepage": "https://DanielMalede.github.io/ecommerce-store",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@mui/icons-material": "^5.10.9",
-    "@mui/material": "^5.10.9",
-    "@mui/x-data-grid": "^5.17.7",
+    "@mui/material": "^5.10.10",
+    "@mui/x-data-grid": "^5.17.8",
+    "@react-google-maps/api": "^2.13.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
+    "@testing-library/user-event": "^14.4.3",
     "bootstrap": "^5.2.2",
+    "cypress": "^10.10.0",
+    "dotenv": "^16.0.3",
     "firebase": "^9.12.1",
+    "google-map-react": "^2.2.0",
     "latest": "^0.2.0",
     "mdb-react-ui-kit": "^4.2.0",
     "mui-image": "^1.0.7",
+    "npm-check-updates": "^16.3.15",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-bootstrap-icons": "^1.9.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-social-login-buttons": "^3.6.1",
-    "web-vitals": "^2.1.4"
+    "tar": "^4.4.2",
+    "use-places-autocomplete": "^4.0.0",
+    "web-vitals": "^3.0.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -52,6 +62,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.18"
   }
 }

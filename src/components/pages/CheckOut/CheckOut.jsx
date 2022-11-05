@@ -8,13 +8,9 @@ import {
   MDBCardImage,
   MDBCol,
   MDBContainer,
-  MDBIcon,
-  MDBInput,
   MDBListGroup,
   MDBListGroupItem,
-  MDBRipple,
   MDBRow,
-  MDBTooltip,
   MDBTypography,
 } from "mdb-react-ui-kit";
 import { useShoppingContext } from "../../../context/SurfBoardContext";
@@ -22,40 +18,27 @@ import formatCurrency from "../../../utilities/formatCurrency";
 import surfBoards from "../../../services/surfBoards.json";
 import PayPal from "../../../payPal/PayPal/PayPal";
 import { Button } from "react-bootstrap";
-import { useState } from "react";
 import { ChackOutCartBox } from "../../features";
 
 function CheckOut() {
   const { surfItem } = useShoppingContext();
   return (
     <div>
-      <section className="h-100 gradient-custom">
-        <MDBContainer className="py-5 h-100">
-          <MDBRow className="justify-content-center my-4">
-            <MDBCol md="8">
-              <MDBCard className="mb-4">
-                <MDBCardHeader className="py-3">
-                  <MDBTypography tag="h5" className="mb-0">
-                    Cart
-                  </MDBTypography>
-                </MDBCardHeader>
-                <MDBCardBody>
-                  {surfItem.map((items) => (
-                    <ChackOutCartBox key={items.id} {...items} />
-                  ))}
-
-                </MDBCardBody>
-              </MDBCard>
-
-              <MDBCard className="mb-4">
-                <MDBCardBody>
-                  <p>
-                    <strong>Expected shipping delivery</strong>
-                  </p>
-                  <p className="mb-0">12.10.2020 - 14.10.2020</p>
-                </MDBCardBody>
-              </MDBCard>
-
+      <MDBContainer className="py-5 h-100">
+        <MDBRow className="justify-content-center my-4">
+          <MDBCol md="8">
+            <MDBCard className="mb-4">
+              <MDBCardHeader className="py-3">
+                <MDBTypography tag="h5" className="mb-0">
+                  Cart
+                </MDBTypography>
+              </MDBCardHeader>
+              <MDBCardBody>
+                {surfItem.map((items) => (
+                  <ChackOutCartBox key={items.id} {...items} />
+                ))}
+              </MDBCardBody>
+                </MDBCard>
             <MDBCard className="mb-4 mb-lg-0">
               <MDBCardBody>
                 <p>
@@ -160,7 +143,6 @@ function CheckOut() {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-    </section>
     </div>
   );
 }
