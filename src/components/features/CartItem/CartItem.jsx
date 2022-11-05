@@ -1,7 +1,7 @@
 import "./CartItem.css";
 import React, { useState } from "react";
 import { useShoppingContext } from "../../../context/SurfBoardContext";
-import surfboards from '../../../services/surfBoards.json'
+import surfboards from "../../../services/surfBoards.json";
 import { Stack } from "react-bootstrap";
 import formatCurrency from "../../../utilities/formatCurrency";
 import { MDBBtn } from "mdb-react-ui-kit";
@@ -14,16 +14,28 @@ function CartItem({id,quantity,img1}) {
       <img alt="" src={item.img} style={{width:"125px",height:"17vh",objectFit:"cover"}} />
       <div className="">
         <div>
-          {item.surf}{""}{quantity > 1 && <span className=" text-muted" style={{fontSize:"1.5rem"}}> {quantity}X</span>}
+          {item.surf}
+          {quantity > 1 && (
+            <span className=" text-muted" style={{ fontSize: "1.5rem" }}>
+              {" "}
+              {quantity}X
+            </span>
+          )}
         </div>
         <div>{item.name}</div>
-        <div className=" text-muted fst-italic" style={{fontSize:"1.7rem"}}><b>{formatCurrency(item.price)}</b></div>
-        <div className="fst-italic">{formatCurrency(item.price * quantity)}</div>
+        <div className=" text-muted fst-italic" style={{ fontSize: "1.7rem" }}>
+          <b>{formatCurrency(item.price)}</b>
+        </div>
+        <div className="fst-italic">
+          {formatCurrency(item.price * quantity)}
+        </div>
 
-        <MDBBtn size="sm" onClick={()=>removeFromCart(item.id)}>X</MDBBtn>
+        <MDBBtn size="sm" onClick={() => removeFromCart(item.id)}>
+          X
+        </MDBBtn>
       </div>
     </Stack>
   );
-};
+}
 
 export default CartItem;

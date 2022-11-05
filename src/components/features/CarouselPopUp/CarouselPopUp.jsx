@@ -1,9 +1,6 @@
 import "./CarouselPopUp.css";
-import React from 'react';
-import {
-  MDBCarousel,
-  MDBCarouselItem,
-} from 'mdb-react-ui-kit';
+import React from "react";
+import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 
 export default function CarouselPopUp({id,counter,img,img1}) {
   return (
