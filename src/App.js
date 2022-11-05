@@ -30,7 +30,7 @@ function App() {
             <Route path="SignIn" element={<SignIn />} />
             <Route path="/signUp" element={<SignUp />} />
             <Route path="/" element={<ProtectedPage><Home /></ProtectedPage>}/>
-            <Route path="/ecommerce-store" element={user!=null?<Home />:<SignIn/>}/>
+            <Route path="/ecommerce-store" element={<ProtectedPage><Home /></ProtectedPage>}/>
             <Route path="*" element={<NotFound />} />
             <Route path="About" element={user!=null?<About />:<SignIn/>} />
             <Route path="Store" element={user!=null?<Surfboards />:<SignIn/>} />
