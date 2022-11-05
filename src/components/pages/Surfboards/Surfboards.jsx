@@ -1,7 +1,8 @@
 import "./Surfboards.css";
-import React, { useState } from "react";
+import React, {useState } from "react";
 import { Card } from "../../features";
-import {  MDBContainer,
+import {
+  MDBContainer,
   MDBRow,
   MDBCol,
   MDBInput,
@@ -9,33 +10,40 @@ import {  MDBContainer,
   MDBDropdownToggle,
   MDBDropdownMenu,
   MDBDropdownItem,
-  MDBDropdown,} from "mdb-react-ui-kit";
+  MDBDropdown,
+} from "mdb-react-ui-kit";
 import surfBoards from "../../../services/surfBoards.json";
+
 function Surfboards() {
-    // const [search, setSearch] = useState("");
-    const [data, setData] = useState(surfBoards);
-    const [colors, setColors] = useState("");
-    const filterResult = (BtnResult) => {
-      const result = surfBoards.filter((curData) => {
-        return curData.category.toLowerCase() === BtnResult.toLowerCase();
-      });
-      const color = surfBoards.filter((curData) => {
-        return curData.color.toLowerCase() === BtnResult;
-      });
-      // const info = surfBoards.filter((item) => {
-      //   return search.toLowerCase() === ""
-      //     ? item
-      //     : item.name.toLowerCase().includes(search);
-      // });
-  
-      setData(result);
-      setColors(color);
-      // setSearch(info);
-    };
+  // const [search, setSearch] = useState("");
+  const [data, setData] = useState(surfBoards);
+  const [colors, setColors] = useState("");
+  const filterResult = (BtnResult) => {
+    const result = surfBoards.filter((curData) => {
+      return curData.category.toLowerCase() === BtnResult.toLowerCase();
+    });
+    const color = surfBoards.filter((curData) => {
+      return curData.color.toLowerCase() === BtnResult;
+    });
+    // const info = surfBoards.filter((item) => {
+    //   return search.toLowerCase() === ""
+    //     ? item
+    //     : item.name.toLowerCase().includes(search);
+    // });
+
+    setData(result);
+    setColors(color);
+    // setSearch(info);
+  };
   return (
     <div className="cart">
       <div>
-      <img style={{width:"100vw",height:"40vh"}} src='images/Home/headPic.jpg' className=' shadow-6' alt='...' />
+        <img
+          alt=""
+          style={{ width: "100vw", height: "40vh" }}
+          src="images/Home/headPic.jpg"
+          className=" shadow-6"
+        />
       </div>
       <MDBContainer>
         <form className="mt-5 ">

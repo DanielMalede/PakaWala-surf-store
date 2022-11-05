@@ -1,5 +1,5 @@
 import "./Header.css";
-import React from "react";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -19,7 +19,7 @@ import { MDBIcon } from 'mdb-react-ui-kit';
 import { useShoppingContext } from "../../../context/SurfBoardContext";
 
 
-const pages = ["Home","Surfboards","About"];
+const pages = ["Home","Store","About"];
 
 const ResponsiveAppBar = () => {
   const {openCart ,cartQuantity} = useShoppingContext()
@@ -32,8 +32,8 @@ const ResponsiveAppBar = () => {
       console.log(error.message);
     }
   };
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = useState(null);
+  const [anchorElUser, setAnchorElUser] = useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -54,25 +54,7 @@ const ResponsiveAppBar = () => {
     <AppBar className=" bg-light"  position="static">
       <Container className="bg-light"  maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            <Link to="Home">LOGO</Link>
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box  sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -81,9 +63,10 @@ const ResponsiveAppBar = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon className="text-black"/>
             </IconButton>
             <Menu
+            
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -98,7 +81,7 @@ const ResponsiveAppBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: "block", md: "none" }
               }}
             >
               {pages.map((page) => (
@@ -111,29 +94,19 @@ const ResponsiveAppBar = () => {
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <Box className="thisBox d-sm-flex align-items-center" sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Button 
+                className=" text-black"
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  <Link to={"/Home"}>
+                <Avatar  style={{ marginLeft: "15px" }} src='images/Logo/Logo.png' />
+                  </Link>
 
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            <Link to="Home">LOGO</Link>
-          </Typography>
-
-          <Box className="thisBox" sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+                </Button>
             {pages.map((page) => (
-              <Link to={page}>
+              <Link key={page} to={page}>
                 <Button 
                 className=" text-black"
                   key={page}

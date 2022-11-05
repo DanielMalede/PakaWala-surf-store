@@ -53,7 +53,10 @@ function About() {
             </p>
           </MDBCol>
           <MDBCol size={12} md="6">
-            <p className=" aboutText fs-5 fw-light mx-lg-5 p-md-5">
+            <h2 className=" fs-1 mt-md-5 p-md-4 pt-md-5">
+              <b>HIGH QUALITY</b>
+            </h2>
+            <p className=" aboutText fs-5 fw-light mx-lg-5 ">
               <i>
                 For 40 years, our design and manufacturing teams have not
                 compromised on quality! With professional focus groups, we test
@@ -67,7 +70,7 @@ function About() {
             <img className=" p-md-5" src="images/About/pic3.jpg" alt="" />
           </MDBCol>
         </MDBRow>
-        <div className=" mx-md-5 ">
+        <div className=" mx-md-5  text-center">
           <h2 className=" fw-bold fs-1 mt-5">How can we help you ?</h2>
           <p className="mx-md-5 fs-5 fw-light mt-md-4 mt-3">
             <i>

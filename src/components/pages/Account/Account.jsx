@@ -1,12 +1,11 @@
 import "./Account.css";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import {
   MDBBtn,
   MDBCard,
   MDBCardBody,
   MDBCol,
   MDBIcon,
-  MDBInput,
   MDBRow,
   MDBTypography,
 } from "mdb-react-ui-kit";
@@ -15,10 +14,9 @@ import { Link } from "react-router-dom";
 
 export default function Account() {
   let { user } = useUserAuth();
-  const [userFname, setUserFname] = useState(user.displayName);
 
   return (
-    <>
+    <span>
       <div className="mx-auto gradient-custom  ">
         <MDBRow className="pt-3 mx-3">
           <MDBCol md="3">
@@ -94,7 +92,6 @@ export default function Account() {
                     </MDBCol>
                     <MDBCol>
                       <MDBTypography tag="h4" style={{ color: "#495057" }}>
-                        {/* {user.metadata.lastSignInTime === undefined || null? "Not Available": user.metadata.lastSignInTime}    */}
                       </MDBTypography>
                     </MDBCol>
                   </MDBRow>
@@ -111,7 +108,7 @@ export default function Account() {
           </MDBCol>
         </MDBRow>
       </div>
-    </>
+    </span>
   );
 }
 

@@ -101,7 +101,9 @@ export default function SignIn() {
             <Typography component="h1" variant="h5">
               Sign in
             </Typography>
+
           {error && <Alert severity="error">{error}</Alert>}
+          
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
               <TextField
               onChange={(e)=> setEmail(e.target.value)}
@@ -143,6 +145,13 @@ export default function SignIn() {
                 <Grid item>
                 <Link to="/SignUp" variant="body2">
                     {"Don't have an account? Sign Up"}
+                  </Link>
+                </Grid>
+              </Grid>
+              <Grid container justifyContent="center">
+                <Grid item>
+                <Link to="/ForgotPassword" variant="body2">
+                    {"Forgot Password?"}
                   </Link>
                 </Grid>
               </Grid>

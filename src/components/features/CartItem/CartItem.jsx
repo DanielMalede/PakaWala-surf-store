@@ -5,16 +5,13 @@ import surfboards from "../../../services/surfBoards.json";
 import { Stack } from "react-bootstrap";
 import formatCurrency from "../../../utilities/formatCurrency";
 import { MDBBtn } from "mdb-react-ui-kit";
-function CartItem({ id, quantity }) {
-  const { removeFromCart } = useShoppingContext();
-  const [item, setItem] = useState(surfboards.find((item) => item.id === id));
-  if (item == null) return null;
-  return (
-    <Stack direction="horizontal" gap={2} className="d-flex ">
-      <img
-        src={`images/SurfBoards/${id}.webp`}
-        style={{ width: "125px", height: "17vh", objectFit: "cover" }}
-      />
+function CartItem({id,quantity,img1}) {
+  const {removeFromCart} = useShoppingContext();
+  const [item,] = useState(surfboards.find(item=> item.id === id))
+  if (item == null ) return null   
+    return (
+      <Stack direction="horizontal" gap={2} className="d-flex ">
+      <img alt="" src={item.img} style={{width:"125px",height:"17vh",objectFit:"cover"}} />
       <div className="">
         <div>
           {item.surf}

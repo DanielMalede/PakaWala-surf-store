@@ -89,7 +89,7 @@ export default function Footer() {
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                DanielMalede.com
+                DanielMalede@gmail.com
               </p>
               <p>
                 <MDBIcon icon="phone" className="me-3" /> +972 52 - 473 - 8547
