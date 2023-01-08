@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {Route, Routes } from "react-router-dom";
 import "./App.css";
 import {
@@ -21,9 +22,26 @@ import {
 
 function App() {
   let { user } = useUserAuth();
+  console.log(user)
+  // const test = async () => {
+  //   try {
+  //     console.log("CheckPoint");
+  //      const response  =await fetch('http://localhost:5000/users/get')
+  //      .then(res=>res.json())
+  //     return response
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   test().then(res=>console.log(res));
+  //   // isLoggedIn();
+  // }, []);
   return (
     <div className="App">
         <SurfBoardsProvider>
+          {}
         {!user ? "" : <Header />}
           <Routes>
             <Route path="/Home" element={user!=null?<Home />:<SignIn/>} />
