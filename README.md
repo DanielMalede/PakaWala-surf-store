@@ -1,16 +1,19 @@
 <h1>PakaWala Surf Store</h1>
+
 PakaWala Surf Store Logo
 
-This is the source code for a web application that simulates an online store for surfing equipment and accessories. The application is built using the MERN stack, which stands for MongoDB, Express, React, and Node.js.
+<p>This is the source code for a web application that simulates an online store for surfing equipment and accessories. The application is built using the MERN stack, which stands for MongoDB, Express, React, and Node.js.</p>
 
-Technologies Used
-MongoDB: A NoSQL database used to store data related to products and users.
-Express: A web application framework for Node.js used to create the backend API.
-React: A JavaScript library used to create the user interface and handle client-side logic.
-Node.js: A JavaScript runtime used to run the server-side code.
-Redux: A state management library used to manage application-level state.
-Bootstrap: A CSS framework used to style the user interface.
-Stripe: A payment processing platform used to handle online payments.
+<h2>Technologies Used</h2>
+<ul>
+  <li>MongoDB: A NoSQL database used to store data related to products and users.</li>
+<li>Express: A web application framework for Node.js used to create the backend API.</li>
+<li>React: A JavaScript library used to create the user interface and handle client-side logic.</li>
+<li>Node.js: A JavaScript runtime used to run the server-side code.</li>
+<li>Redux: A state management library used to manage application-level state.</li>
+<li>Mdbootstrap: A CSS framework used to style the user interface.</li>
+<li>PayPal: A payment processing platform used to handle online payments.</li>
+</ul>
 Installation
 To install and run this application locally, follow these steps:
 
