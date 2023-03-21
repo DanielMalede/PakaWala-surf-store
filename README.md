@@ -23,10 +23,7 @@ To install and run this application locally, follow these steps:
 - Install dependencies: npm install in both the client and server directories.
 - Set up environment variables by creating a .env file in the root directory and adding the following variables:
 
-MONGODB_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-STRIPE_SECRET_KEY=your_stripe_secret_key
-STRIPE_PUBLIC_KEY=your_stripe_public_key
+REACT_APP_HOT_APR_KEY=<your_api_firebase_key>
 
 Replace the values with your own MongoDB URI, a secret string for JWT token encryption, and your Stripe API keys.
 Run the application: npm start in both the client and server directories.
@@ -37,27 +34,13 @@ Run the application: npm start in both the client and server directories.
 <li>Product browsing and searching</li>
 <li>Product details page with reviews and ratings</li>
 <li>Shopping cart and checkout</li>
-<li>Payment processing with Stripe</li>
+<li>Payment processing with PayPal</li>
 <li>User profile management (edit profile, view orders)</li>
 <li>Admin functionality (add/edit products, view orders)</li>
 </ul>
 
 Responsive design: The application is optimized for mobile devices.
-Screenshots
-Home Page
-Home Page
 
-Product Page
-Product Page
-
-Cart Page
-Cart Page
-
-Checkout Page
-Checkout Page
-
-Admin Dashboard
-Admin Dashboard
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
