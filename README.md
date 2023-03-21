@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+<h1>PakaWala Surf Store</h1>
+PakaWala Surf Store Logo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the source code for a web application that simulates an online store for surfing equipment and accessories. The application is built using the MERN stack, which stands for MongoDB, Express, React, and Node.js.
 
-## Available Scripts
+Technologies Used
+MongoDB: A NoSQL database used to store data related to products and users.
+Express: A web application framework for Node.js used to create the backend API.
+React: A JavaScript library used to create the user interface and handle client-side logic.
+Node.js: A JavaScript runtime used to run the server-side code.
+Redux: A state management library used to manage application-level state.
+Bootstrap: A CSS framework used to style the user interface.
+Stripe: A payment processing platform used to handle online payments.
+Installation
+To install and run this application locally, follow these steps:
 
-In the project directory, you can run:
+Clone this repository: git clone https://github.com/DanielMalede/PakaWala-surf-store.git.
+Install dependencies: npm install in both the client and server directories.
+Set up environment variables by creating a .env file in the root directory and adding the following variables:
+makefile
+Copy code
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+STRIPE_SECRET_KEY=your_stripe_secret_key
+STRIPE_PUBLIC_KEY=your_stripe_public_key
+Replace the values with your own MongoDB URI, a secret string for JWT token encryption, and your Stripe API keys.
+Run the application: npm start in both the client and server directories.
+Features
+User authentication: Users can sign up, log in, and log out.
+Product management: Users can view products, add them to their cart, and checkout using Stripe.
+Admin features: Admin users can add, edit, and delete products.
+Responsive design: The application is optimized for mobile devices.
+Screenshots
+Home Page
+Home Page
 
-### `npm start`
+Product Page
+Product Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Cart Page
+Cart Page
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Checkout Page
+Checkout Page
 
-### `npm test`
+Admin Dashboard
+Admin Dashboard
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
