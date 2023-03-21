@@ -25,7 +25,7 @@ To install and run this application locally, follow these steps:
 
 REACT_APP_HOT_APR_KEY=<your_api_firebase_key>
 
-Replace the values with your own MongoDB URI, a secret string for JWT token encryption, and your Stripe API keys.
+Replace the values with your own Firebase URI.
 Run the application: npm start in both the client and server directories.
 
 <h2>Features</h2>
